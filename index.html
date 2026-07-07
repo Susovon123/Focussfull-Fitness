@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focusfull-Fitness</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> 
+  <!-- AOS --> 
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <nav class="nav-bar">
+            <!-- Logo (Shared) -->
+            <div class="logo"> 
+                <a href="index.html">Fitin</a>
+            </div>  
+            
+            <!-- Desktop Links (Hidden on mobile) -->
+            <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li> 
+                    <select name="destination" id="destination">
+                        <option value="Destination">Destination</option>
+                    </select>
+                </li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><input type="search" placeholder="Search..."></li>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+            </ul>
+
+            <div class="nav-controls">
+                <div class="cmn-btn">
+                    <a href="#">Login/Create Account</a>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Mobile Sliding Drawer (Hidden on desktop) -->
+            <div class="mobile-navbar">
+                   <div class="logo"> 
+                <a href="index.html">Fitin</a>
+            </div>  
+                <div class="mobile-nav-slide">
+                  
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                      <li><a href="workout.html">workout</a></li>
+                    </ul>
+                    
+                   
+                    <div class="mobile-right">
+                        <div class="cmn-btn">
+                            <a href="#">Login/Create Account</a>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+     
+    <main>
+        <section class="banner cmn-gap1">
+<div class="container">
+    <div class="row">
+        <div class="col30 banner-subheading">
+            <p class="cmn-p2" data-aos="fade-right" data-aos-duration="1000" >
+                Lorem, ipsum dolor sit amet consectetur dolor sit amet consectetur
+            </p>
+<div class="banner-circle" data-aos="fade-right" data-aos-duration="1000" >
+    <div class="circle">
+        <img src="images/Frame 4.png" alt="">
+    </div>
+    <div class="circle">
+        <img src="images/Frame 5.png" alt="">
+    </div>
+    <div class="circle">
+        <img src="images/Frame 6.png" alt="">
+    </div>
+      <div class="circle">
+        <img src="images/Frame 7.png" alt="">
+      </div>
+</div> 
+        <p class="sub-banner-text" data-aos="fade-right" data-aos-duration="1000" >
+            <span style="color: #F2FF00;">12+</span> membership
+        </p>
+        </div> 
+        <div class="col70 banner-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<h1>Focusfull <span style="color: #F2FF00;">Fitness </span></h1> 
+<div class="bar">
+    <div class="bar-rectangle"></div>
+    <div class="bar-rectangle"></div>
+    <div class="bar-rectangle"></div>
+</div>
+        </div> 
+   <div class="col33 cmn-gap">
+    <div class="box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+       <div class="semi-box">
+            <div class="bar1">
+                <div class="bar-rectangle1"></div>
+                   <div class="bar-rectangle1"></div>
+                      <div class="bar-rectangle1"></div>
+            </div> 
+                  <p class="cmn-p semi-box-heading"> 
+                personal tranning
+            </p> 
+            <p class="cmn-p3 semi-box-text">
+                01
+            </p>
+          <div class="semi-box-img">
+               <figure>
+                <img src="images/Image1 1.png" alt="" >
+            </figure> 
+          </div>
+    
+        </div>
+    </div>
+   </div>
+      <div class="col33 cmn-gap">
+    <div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+        <div class="semi-box">
+            <div class="bar1">
+                <div class="bar-rectangle1"></div>
+                   <div class="bar-rectangle1"></div>
+                      <div class="bar-rectangle1"></div>
+            </div> 
+            <p class="cmn-p semi-box-heading"> 
+                group workout
+            </p> 
+            <p class="cmn-p3 semi-box-text">
+                02
+            </p>
+               <div class="semi-box-img">
+               <figure>
+                <img src="images/Mask group.png" alt="" >
+            </figure> 
+          </div>
+        </div>
+    </div>
+   </div>
+      <div class="col33 cmn-gap">
+    <div class="box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+       <div class="semi-box">
+            <div class="bar1">
+                <div class="bar-rectangle1"></div>
+                   <div class="bar-rectangle1"></div>
+                      <div class="bar-rectangle1"></div>
+            </div> 
+                 <p class="cmn-p semi-box-heading"> 
+              muscle building
+            </p> 
+            <p class="cmn-p3 semi-box-text">
+                03
+            </p> 
+           <div class="semi-box-img1">
+             <figure>
+                <img src="images/ccv-1 1.png" alt="" class="semi-box-img">
+            </figure> 
+           </div>
+
+        </div>
+    </div>
+   </div>
+    </div>
+</div>
+        </section> 
+        <!-- about us  -->
+        <section class="about-our-gym cmn-gap3">
+            <div class="container">
+            <div class="row">
+                <div class="col50 " >
+                     <div class="about-our-gym-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="about-our-gym-circle">
+
+                </div>
+                   <h2 class="h2-title cmn-gap7">
+                    About Our Gym
+                </h2>
+                 <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div> 
+            </div>
+            </div>
+            <div class="col50 ">
+     <h3 class="h3-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                Empowering Every Body to Move Stronger, Live Better, and Go Further
+             </h3>
+            </div>
+                </div>
+<div class="row cmn-gap6">
+    <div class="col50" >
+       <div class="about-our-gym-img-wrapper" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+         <figure>
+                            <img src="images/Rectangle 4.png" alt="" loading="lazy" class="about-our-gym-img">
+                        </figure>
+       </div>
+    </div> 
+    <div class="col50"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" >
+        <p class="cmn-p4">
+We believe fitness is more than just physical. It’s about building confidence, discipline, and a lifestyle you can be proud of.
+</p>  
+
+<div class="about-our-gym-content cmn-gap5">
+<p class="cmn-p5">
+   Founded with  the version of  creating a spacet for all fitness levels .Our gym offers expert guidence modern equipment and an uplifting atmosphere to help you achieve your goals.
+</p>
+  
+    
+<p class="cmn-p5">
+    Whether you’re a beginner or a seasoned athlete. We’re here to support your journey with personalized training, diverse programs and a community that
+motivates you every step of the way
+</p>
+</div>
+
+<div class="about-our-gym-content">
+    <div class="call-now">
+        <i class="fa-solid fa-phone"></i>
+      
+    </div> 
+      <div class="call-now-content">
+            <p class="call-now-text">
+CUSTOMER SUPPORT
+            </p> 
+            <p class="call-now-text1">
+                (888)4000-2424
+            </p>
+
+        </div>
+</div>
+    </div>
+</div>
+           </div>
+           
+        </section>
+        <section class="service cmn-gap3"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col40">
+                       <div class="about-our-gym-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" >
+                <div class="about-our-gym-circle">
+
+                </div>
+                   <h2 class="h2-title cmn-gap7">
+                   Services
+                </h2>
+                 <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div> 
+            </div>
+                </div> 
+              <div class="col60">
+
+              </div>
+                </div> 
+                <div class="row cmn-gap5">
+                    <div class="col40"></div> 
+                    <div class="col60">
+                         
+                  <div class="service-box-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" >
+                      <p class="service-text">
+                        PERSONAL TRAINING
+                    </p> 
+                    <figure>
+                        <img src="images/service-image.png" alt="" class="service-img">
+                    </figure> 
+ <figure>
+    <img src="images/right-arrow.png" alt="" class="right-arrow">
+ </figure>
+                  </div>
+                   <div class="service-box-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                      <p class="service-text">
+                        group tranning
+                    </p> 
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ695tH-hWdF3-z7H6d-CJ_be59Ah4ylDfHZYPAwknYeQ&s=10" alt="" class="service-img1">
+                    </figure> 
+ <figure>
+    <img src="images/right-arrow.png" alt="" class="right-arrow1">
+ </figure>
+                  </div>
+                   <div class="service-box-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                      <p class="service-text">
+                        PERSONAL TRAINING
+                    </p> 
+                    <figure>
+                        <img src="images/service-image.png" alt="" class="service-img">
+                    </figure> 
+ <figure>
+    <img src="images/right-arrow.png" alt="" class="right-arrow">
+ </figure>
+                  </div>
+                  
+
+               
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- about our gym -->
+        <section class="about-gym cmn-gap3">
+            <div class="container">
+                       <div class="row">
+                <div class="col50">
+                     <div class="about-our-gym-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" >
+                <div class="about-our-gym-circle">
+
+                </div>
+                   <h2 class="h2-title cmn-gap7">
+                    About Our Gym
+                </h2>
+                 <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div> 
+            </div>
+            </div>
+            <div class="col50">
+     <h3 class="h3-title"data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" >
+           Turn your  workout into a lifestyle that moves you forward
+             </h3>
+            </div>
+                </div>
+                              <div class="row cmn-gap6">
+                    <div class="col50">
+                        <figure>
+                            <img src="images/Frame 25.png" alt="" loading="lazy" class="about-our-gym-img1">
+                        </figure>
+                    </div>
+                    <div class="col50">
+
+
+<div class="about-gym-content cmn-gap2">
+<div class="about-gym-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+<figure>
+    <img src="images/check.png" alt="">
+</figure> 
+<p class="about-gym-boxt-head">
+    Certified & Experience Coachees
+</p> 
+<p class="about-gym-box-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nam, placeat rem soluta facilis minima aut magni sapiente voluptatibus necessitatibus voluptatum totam laudantium impedit ea temporibus ipsam ex at quidem!
+</p>
+</div>  
+<div class="about-gym-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<figure>
+    <img src="images/check.png" alt="">
+</figure> 
+<p class="about-gym-boxt-head">
+    Certified & Experience Coachees
+</p> 
+<p class="about-gym-box-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nam, placeat rem soluta facilis minima aut magni sapiente voluptatibus necessitatibus voluptatum totam laudantium impedit ea temporibus ipsam ex at quidem!
+</p>
+</div> 
+
+</div>
+<div class="about-gym-content cmn-gap2">
+<div class="about-gym-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" >
+<figure>
+    <img src="images/check.png" alt="">
+</figure> 
+<p class="about-gym-boxt-head">
+    Certified & Experience Coachees
+</p> 
+<p class="about-gym-box-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nam, placeat rem soluta facilis minima aut magni sapiente voluptatibus necessitatibus voluptatum totam laudantium impedit ea temporibus ipsam ex at quidem!
+</p>
+</div>  
+<div class="about-gym-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+<figure>
+    <img src="images/check.png" alt="">
+</figure> 
+<p class="about-gym-boxt-head">
+    Certified & Experience Coachees
+</p> 
+<p class="about-gym-box-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nam, placeat rem soluta facilis minima aut magni sapiente voluptatibus necessitatibus voluptatum totam laudantium impedit ea temporibus ipsam ex at quidem!
+</p>
+</div> 
+
+</div>
+<div class="about-gym-content cmn-gap2">
+<div class="about-gym-box"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+<figure>
+    <img src="images/check.png" alt="">
+</figure> 
+<p class="about-gym-boxt-head">
+    Certified & Experience Coachees
+</p> 
+<p class="about-gym-box-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nam, placeat rem soluta facilis minima aut magni sapiente voluptatibus necessitatibus voluptatum totam laudantium impedit ea temporibus ipsam ex at quidem!
+</p>
+</div>  
+<div class="about-gym-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+<figure>
+    <img src="images/check.png" alt="">
+</figure> 
+<p class="about-gym-boxt-head">
+    Certified & Experience Coachees
+</p> 
+<p class="about-gym-box-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nam, placeat rem soluta facilis minima aut magni sapiente voluptatibus necessitatibus voluptatum totam laudantium impedit ea temporibus ipsam ex at quidem!
+</p>
+</div> 
+
+</div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <!-- meet your coach -->
+        <section class="meet-your-coach cmn-gap3">
+<div class="container">
+          <div class="row"> 
+               <div class="col50">
+                     <div class="about-our-gym-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="about-our-gym-circle">
+
+                </div>
+                   <h2 class="h2-title cmn-gap7">
+                  meet your coaches
+                </h2>
+                 <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div> 
+            </div>
+            </div> 
+       <div class="col50">
+     <h3 class="h3-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+        Flexible Options for Beginners, Regulars, and Hardcore Athletes
+             </h3>
+            </div>
+
+               <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="tranier-box">
+    <div class="trainer-content">
+        <figure>
+        <img src="images/portrait-muscular-handsome-bodybuilder-sportswear-standing-with-crossed-arms-studio-isolated-gray-background 2.png" alt="" loading="lazy" class="trainer-image">
+      </figure> 
+                     <div class="bar3">
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+</div> 
+<p class="trainer-content-text"> Fitness coach</p>
+ <h3 class="trainer-content-text-heading">
+      Ethan Cross
+             </h3>
+    </div>
+                    </div>
+        </div>
+        <div class="swiper-slide"> <div class="tranier-box">
+    <div class="trainer-content">
+        <figure>
+        <img src="images/pensive-beautiful-brunette-female-boxer-sports-bra-with-bandaged-hands-isolated-dark-textured-background 1.png" alt="" loading="lazy" class="trainer-image1">
+      </figure> 
+                     <div class="bar3">
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+</div> 
+<p class="trainer-content-text"> Fitness coach</p>
+ <h3 class="trainer-content-text-heading">
+      trent morgan
+             </h3>
+    </div>
+                    </div></div>
+        <div class="swiper-slide">
+                              <div class="tranier-box">
+    <div class="trainer-content">
+        <figure>
+        <img src="images/portrait-young-handsome-sportsman-holds-hand-chin-dark-background 1.png" alt="" loading="lazy" class="trainer-image1">
+      </figure> 
+                     <div class="bar3">
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+</div> 
+<p class="trainer-content-text"> Fitness coach</p>
+ <h3 class="trainer-content-text-heading">
+      Damian brooks
+             </h3>
+    </div>
+                    </div>
+        </div>
+        <div class="swiper-slide"><div class="tranier-box">
+    <div class="trainer-content">
+        <figure>
+        <img src="images/portrait-muscular-handsome-bodybuilder-sportswear-standing-with-crossed-arms-studio-isolated-gray-background 2.png" alt="" loading="lazy" class="trainer-image">
+      </figure> 
+                     <div class="bar3">
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+</div> 
+<p class="trainer-content-text"> Fitness coach</p>
+ <h3 class="trainer-content-text-heading">
+      Ethan Cross
+             </h3>
+    </div>
+                    </div></div>
+        <div class="swiper-slide">                  <div class="tranier-box">
+    <div class="trainer-content">
+        <figure>
+        <img src="images/portrait-young-handsome-sportsman-holds-hand-chin-dark-background 1.png" alt="" loading="lazy" class="trainer-image1">
+      </figure> 
+                     <div class="bar3">
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+</div> 
+<p class="trainer-content-text"> Fitness coach</p>
+ <h3 class="trainer-content-text-heading">
+      Damian brooks
+             </h3>
+    </div>
+                    </div></div>
+        <div class="swiper-slide"> <div class="tranier-box">
+    <div class="trainer-content">
+        <figure>
+        <img src="images/pensive-beautiful-brunette-female-boxer-sports-bra-with-bandaged-hands-isolated-dark-textured-background 1.png" alt="" loading="lazy" class="trainer-image1">
+      </figure> 
+                     <div class="bar3">
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+    <div class="bar-rectangle3"></div>
+</div> 
+<p class="trainer-content-text"> Fitness coach</p>
+ <h3 class="trainer-content-text-heading">
+      trent morgan
+             </h3>
+    </div>
+                    </div></div>
+       
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+          </div>
+</div>
+        </section> 
+        <section class="choose-your-plan cmn-gap3">
+            <div class="container">
+
+                <div class="row">
+                        <div class="col50">
+                                        <div class="about-our-gym-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="about-our-gym-circle">
+
+                </div>
+                   <h2 class="h2-title cmn-gap7">
+                  Our Plans
+                </h2>
+                 <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div> 
+            </div>
+                        </div> 
+                        <div class="col50">
+                            <h3 class="h3-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+        Flexible plans tailored to your goals—start your fitness journey today.
+             </h3>
+            
+                        </div>
+                </div>
+                <div class="row cmn-gap6">
+                    <div class="col33">
+                         <div class="payment-box">
+                          <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div>  
+            <p class="tranier-box-head"> 
+                BASIC
+            </p> 
+            <p>For beginners taking that first steps into fitness</p> 
+            <div class="payment-content flex">
+                <div class="payment-content-box">
+                    <p class="payment-content-box-text">
+                        $25 <sup>/ month</sup>
+                    </p> 
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">All basic features</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Locker Use</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Unlimited Group Classes</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Progress & Body Tracking</p>
+                    </div>
+                </div> 
+                <div class="payment-content-box">
+<figure>
+    <img src="images/f1b2e4523faa890c11e7d1114e9e152199eaf546.png" alt="" class="payment-content-box-img">
+</figure>
+                </div>
+            </div> 
+           <div class="cmn-gap">
+               <a href="#" class="payment-button ">Get Membership</a>
+           </div>
+             </div>
+                    </div> 
+                 <div class="col33">
+                         <div class="payment-box">
+                          <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div>  
+            <p class="tranier-box-head">
+                PRO
+            </p> 
+            <p>Level up with advanced workouts and personalized guidance.</p> 
+            <div class="payment-content flex">
+                <div class="payment-content-box">
+                    <p class="payment-content-box-text">
+                        $30 <sup>/ month</sup>
+                    </p> 
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">All basic features</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Locker Use</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Unlimited Group Classes</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Progress & Body Tracking</p>
+                    </div>
+                </div> 
+                <div class="payment-content-box">
+<figure>
+    <img src="images/f1b2e4523faa890c11e7d1114e9e152199eaf546.png" alt="" class="payment-content-box-img">
+</figure>
+                </div>
+            </div> 
+           <div class="cmn-gap">
+               <a href="#" class="payment-button ">Get Membership</a>
+           </div>
+             </div> 
+             </div>
+              <div class="col33">
+                         <div class="payment-box">
+                          <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div>  
+            <p class="tranier-box-head">
+                ELITE
+            </p> 
+            <p>Go all-in with premium coaching for maximum results.</p> 
+            <div class="payment-content flex">
+                <div class="payment-content-box">
+                    <p class="payment-content-box-text">
+                        $65 <sup>/ month</sup>
+                    </p> 
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">All basic features</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Locker Use</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Unlimited Group Classes</p>
+                    </div>
+                    <div class="payment-details flex"> 
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-check" ></i>
+                        </div>
+<p class="payment-circle-text">Progress & Body Tracking</p>
+                    </div>
+                </div> 
+                <div class="payment-content-box">
+<figure>
+    <img src="images/f1b2e4523faa890c11e7d1114e9e152199eaf546.png" alt="" class="payment-content-box-img">
+</figure>
+                </div>
+            </div> 
+           <div class="cmn-gap">
+             <a href="#" class="payment-button ">Get Membership</a>
+           </div>
+             </div>
+            
+                </div>
+            </div>
+        </section>
+        <!-- our location -->
+        <section class="our-location cmn-gap3">
+            <div class="container">
+                                              <div class="about-our-gym-content" data-aos="fade-down" data-aos-duration="500" data-aos-delay="1000">
+                <div class="about-our-gym-circle">
+
+                </div>
+                   <h2 class="h2-title cmn-gap7">
+                 Our location
+                </h2>
+                 <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div> 
+            </div>
+                        <h3 class="h3-title cmn-gap6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+       Our Global Pressence <span class="color">Fitness</span> Center <span class="color">Center the World</span>
+             </h3>
+                <div class="row">
+<div class="col30" >
+<p class="our-location-head-sub cmn-gap5">25 <span class="color">+</span></p>
+<p class="our-location-text-sub">Countries</p>
+</div> 
+<div class="col70">
+    <p class="cmn-gap5">Our presence stretches across continents, connecting a worldwide community of fitness enthusiasts. From bustling metropolitan hubs to growing local neighborhoods, our fitness centers deliver the same trusted quality and results-driven training. Each location is equipped with expert coaches, modern facilities, and a motivating environment tailored to your goals. Whether you are traveling, relocating, or joining us for the first time, you’ll always find a home for your fitness journey with us. Together, we’re building a stronger, healthier world—one city at a time.</p>
+</div>
+                </div>
+                <figure>
+                    <img src="images/08..png" alt="">
+                </figure>
+            </div>
+        </section>
+        <section class="real-transformation cmn-gap3">
+<div class="container">
+    <p class="real-transformation-head" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
+        real stories and real people
+    </p>
+    <p class="real-transformation-sub-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        real transformation
+    </p>
+    <div class="real-transformation-bar">
+         <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+    </div>
+
+</div>
+        </section>
+    </main>  
+          
+<!-- footer -->
+   <footer class="footer cmn-gap3">
+    <div class="container">
+
+        <div class="row footer-top">
+
+            <div class="col30">
+                <a href="#" class="footer-copyright">
+                    ©2025 Fitin.<br>
+                    All rights reserved.
+                </a>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="https://www.instagram.com/?hl=en">
+                            Instagram
+                            <img src="images/right-arrow1.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/login.php/">
+                            Facebook
+                            <img src="images/right-arrow1.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            YouTube
+                            <img src="images/right-arrow1.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col70">
+                <div class="footer-right">
+
+                    <a href="#" class="footer-logo">FitIn.</a>
+
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="workout.html">Workouts</a></li>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="row footer-bottom">
+
+            <div class="col30 ">
+               <p class="footer-head">
+  Stay Updated
+               </p>
+                  
+              
+
+                <p class="footer-para">
+                    We write thoughtfully to your inbox. Subscribe to get
+                    things, tips, offers, and more.
+                </p>
+            </div>
+
+            <div class="col70">
+
+                <form class="footer-form">
+
+                    <input
+                        type="email"
+                        placeholder="Email Input..."
+                        class="footer-input"
+                    >
+
+                    <a class="footer-btn" href="#">
+                        Subscribe
+                    </a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</footer>  
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> 
+  <!-- AOS --> 
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+   <script>
+  AOS.init();
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

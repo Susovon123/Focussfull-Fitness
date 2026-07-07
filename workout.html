@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKOUT</title>
+    <!-- slick in j query css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav-bar">
+          <!-- Logo (Shared) -->
+          <div class="logo">
+            <a href="index.html">Fitin</a>
+          </div>
+
+          <!-- Desktop Links (Hidden on mobile) -->
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li>
+              <select name="destination" id="destination">
+                <option value="Destination">Destination</option>
+              </select>
+            </li>
+            <li><a href="workout.html">Workouts</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><input type="search" placeholder="Search..." /></li>
+            <li><i class="fa-solid fa-bag-shopping"></i></li>
+          </ul>
+
+          <div class="nav-controls">
+            <div class="cmn-btn">
+              <a href="#">Login/Create Account</a>
+              <i class="fas fa-arrow-right arrow-icon"></i>
+            </div>
+            <div class="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <!-- Mobile Sliding Drawer (Hidden on desktop) -->
+          <div class="mobile-navbar">
+            <div class="logo">
+              <a href="index.html">Fitin</a>
+            </div>
+            <div class="mobile-nav-slide">
+              <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="workout.html">Workout</a></li>
+              </ul>
+
+              <div class="mobile-right">
+                <div class="cmn-btn">
+                  <a href="#">Login/Create Account</a>
+                  <i class="fas fa-arrow-right arrow-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- about-us-banner -->
+      <section class="workout-banner">
+        <div class="container">
+          <div class="workout-banner-content">
+            <h1 class="h1-title"><span class="color">WORK</span> OUT</h1>
+
+            <p class="about-us-banner-text">
+              Home <span class="color">• Workout</span>
+            </p>
+
+            <div class="about-bar">
+              <div class="about-bar-rectangle"></div>
+              <div class="about-bar-rectangle"></div>
+              <div class="about-bar-rectangle"></div>
+            </div>
+          </div>
+
+          <div class="row about-workout-box1">
+            <div class="col25">
+              <div
+                class="workout-box-head"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="bar2">
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                </div>
+                <p class="workout-box-head-text-heading cmn-gap2">91k+</p>
+                <p class="workout-box-head-text-sub cmn-gap1">Project Done</p>
+              </div>
+            </div>
+            <div class="col25">
+              <div
+                class="workout-box-head"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="bar2">
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                </div>
+                <p class="workout-box-head-text-heading cmn-gap2">84K+</p>
+                <p class="workout-box-head-text-sub cmn-gap1">Happy Clients</p>
+              </div>
+            </div>
+            <div class="col25">
+              <div
+                class="workout-box-head"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="bar2">
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                </div>
+                <p class="workout-box-head-text-heading cmn-gap2">42+</p>
+                <p class="workout-box-head-text-sub cmn-gap1">
+                  Company support
+                </p>
+              </div>
+            </div>
+            <div class="col25">
+              <div
+                class="workout-box-head"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="bar2">
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                  <div class="bar-rectangle2"></div>
+                </div>
+                <p class="workout-box-head-text-heading cmn-gap2">4.7</p>
+                <p class="workout-box-head-text-sub cmn-gap1">project done</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- workout -->
+
+      <section class="our-location cmn-gap3">
+        <div class="container">
+          <div
+            class="about-our-gym-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="about-our-gym-circle"></div>
+            <h2 class="h2-title cmn-gap7">Workout</h2>
+            <div class="bar2">
+              <div class="bar-rectangle2"></div>
+              <div class="bar-rectangle2"></div>
+              <div class="bar-rectangle2"></div>
+            </div>
+          </div>
+
+          <div class="row cmn-gap2">
+            <div class="col25">
+              <div class="workout-catagories">
+                <select name="" id="">
+                  <option value="Workout Catagories">
+                    Workout Catagories
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col25">
+              <div class="workout-catagories">
+                <select name="" id="">
+                  <option value=" Workout Catagories">Tranning</option>
+                </select>
+              </div>
+            </div>
+            <div class="col25">
+              <div class="workout-catagories">
+                <select name="" id="">
+                  <option value=" Workout Catagories">workout time</option>
+                </select>
+              </div>
+            </div>
+            <div class="col25">
+              <div class="workout-catagories">
+                <select name="" id="">
+                  <option value="Workout Catagories">
+                    membership type
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box">
+                  <div class="workout-box-shape">Strength</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by ethan cross</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">01</div>
+                    <p class="workout-sub-text">power build program</p>
+                    <p class="workout-sub-text1">
+                      Focus on muscle growth and compound lifts.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box1">
+                  <div class="workout-box-shape">WELLNESS</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by tren morgan</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">02</div>
+                    <p class="workout-sub-text">Yoga Flow</p>
+                    <p class="workout-sub-text1">
+                      Improve flexibility and mindfulness.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box3">
+                  <div class="workout-box-shape">Cardio</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by Marcus Colle</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">03</div>
+                    <p class="workout-sub-text">Cardio Blast</p>
+                    <p class="workout-sub-text1">
+                      Treadmill, cycling, and jump rope sessions.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box4">
+                  <div class="workout-box-shape">Strength</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by ethan cross</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">04</div>
+                    <p class="workout-sub-text">Weightlifting 101</p>
+                    <p class="workout-sub-text1">
+                      Learn Olympic and free weight techniques.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box5">
+                  <div class="workout-box-shape">combat</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by Damian brooks</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">05</div>
+                    <p class="workout-sub-text">BoxFit Training</p>
+                    <p class="workout-sub-text1">
+                      Boxing drills for strength and agility.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box6">
+                  <div class="workout-box-shape">strength</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by ethan cross</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">06</div>
+                    <p class="workout-sub-text">Functional Strength</p>
+                    <p class="workout-sub-text1">
+                      Core stability and endurance workouts.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box3">
+                  <div class="workout-box-shape">WELLNESS</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by tren morgan</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">07</div>
+                    <p class="workout-sub-text">power build program</p>
+                    <p class="workout-sub-text1">
+                      Focus on muscle growth and compound lifts.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box1">
+                  <div class="workout-box-shape">WELLNESS</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by tren morgan</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">08</div>
+                    <p class="workout-sub-text">power build program</p>
+                    <p class="workout-sub-text1">
+                      Focus on muscle growth and compound lifts.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box5">
+                  <div class="workout-box-shape">WELLNESS</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by tren morgan</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">09</div>
+                    <p class="workout-sub-text">power build program</p>
+                    <p class="workout-sub-text1">
+                      Focus on muscle growth and compound lifts.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col50 cmn-gap2">
+              <div
+                class="workout-content"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="workout-box3">
+                  <div class="workout-box-shape">WELLNESS</div>
+                  <div class="about-bar1">
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                    <div class="about-bar-rectangle1"></div>
+                  </div>
+                  <p class="workout-head">by tren morgan</p>
+                </div>
+                <div class="flex">
+                  <div class="about-workout-box">
+                    <div class="workout-shape2">10</div>
+                    <p class="workout-sub-text">power build program</p>
+                    <p class="workout-sub-text1">
+                      Focus on muscle growth and compound lifts.
+                    </p>
+                  </div>
+                  <div class="about-workout-box">
+                    <a href="#" class="workout-btn"> Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="common-questions cmn-gap3">
+        <div class="container">
+          <div class="about-our-gym-content">
+            <div class="about-our-gym-circle"></div>
+            <h2 class="h2-title cmn-gap7">COMMON QUESTIONS</h2>
+            <div class="bar2">
+              <div class="bar-rectangle2"></div>
+              <div class="bar-rectangle2"></div>
+              <div class="bar-rectangle2"></div>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-column">
+              <div class="faq-item">
+                <button class="accordion">
+                  <span>Question 1</span>
+                  <span class="icon">&#9662;</span>
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="accordion">
+                  <span>Question 2</span>
+                  <span class="icon">&#9662;</span>
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-column">
+              <div class="faq-item">
+                <button class="accordion">
+                  <span>Question 3</span>
+                  <span class="icon">&#9662;</span>
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="accordion">
+                  <span>Question 4</span>
+                  <span class="icon">&#9662;</span>
+                </button>
+
+                <div class="panel">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer cmn-gap3">
+      <div class="container">
+        <div class="row footer-top">
+          <div class="col30">
+            <a href="#" class="footer-copyright">
+              ©2025 Fitin.<br />
+              All rights reserved.
+            </a>
+
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.instagram.com/?hl=en">
+                  Instagram
+                  <img src="images/right-arrow1.png" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/login.php/">
+                  Facebook
+                  <img src="images/right-arrow1.png" alt="" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/">
+                  YouTube
+                  <img src="images/right-arrow1.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col70">
+            <div class="footer-right">
+              <a href="#" class="footer-logo">FitIn.</a>
+
+              <ul class="footer-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="#">Trainers</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="row footer-bottom">
+          <div class="col30">
+            <p class="footer-head">Stay Updated</p>
+
+            <p class="footer-para">
+              We write thoughtfully to your inbox. Subscribe to get things,
+              tips, offers, and more.
+            </p>
+          </div>
+
+          <div class="col70">
+            <form class="footer-form">
+              <input
+                type="email"
+                placeholder="Email Input..."
+                class="footer-input"
+              />
+
+              <a class="footer-btn" href="#"> Subscribe </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- slick js -->
+    <!-- j query minified -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- j query slick slider plugin -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+    <script>
+      // Select all accordion buttons
+      let accordions = document.querySelectorAll(".accordion");
+
+      // Loop through each accordion
+      accordions.forEach(function (accordion) {
+        // When the accordion is clicked
+        accordion.addEventListener("click", function () {
+          // Add or remove the active class
+          this.classList.toggle("active");
+
+          // Get the panel below the clicked accordion
+          let panel = this.nextElementSibling;
+
+          // Check if the panel is open
+          if (panel.style.maxHeight != "") {
+            // Close the panel
+            panel.style.maxHeight = "";
+          } else {
+            // Open the panel
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
