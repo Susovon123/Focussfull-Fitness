@@ -15,6 +15,7 @@
 
      
 } 
+
 @font-face {
     font-family:"akira-expanded" ;
     src: url(fonts/akira_expanded/Akira\ Expanded\ Demo.otf) format(opentype);
@@ -259,7 +260,7 @@ body{
 }
 .nav-links a {
     font-family: var(--clashDisplay-r); 
-    font-size: 12px; 
+    font-size: 13px; 
     font-weight: 400;
     color: var(--main-color1);
     padding: 7px 8px;
@@ -276,7 +277,7 @@ body{
 } 
 select {
     font-family: var(--clashDisplay-r); 
-    font-size: 12px; 
+    font-size: 13px; 
     font-weight: 400;
     color: var(--main-color1);
     padding: 7px 8px;
@@ -369,7 +370,7 @@ input::placeholder {
 }
 .cmn-btn i {
     border-radius: 50%;
-    padding: 10px 7px; 
+    padding: 8px 7px; 
     border: 2px solid var(--main-color2); 
     color: var(--main-color2); 
     transition: all 0.3s ease;
@@ -2204,8 +2205,8 @@ input[type="search"]{
     }
 
     .about-us-banner-text{
-        left:360px;
-        bottom:270px;
+        left:460px;
+        bottom:260px;
         font-size:15px;
     }
 
@@ -2292,15 +2293,7 @@ input[type="search"]{
         bottom:260px;
     }
 
-    .about-us-banner-text{
-        left:360px;
-        bottom:225px;
-    }
-
-    .about-bar{
-        left:380px;
-        bottom:150px;
-    }
+  
 
     .about-bar-rectangle{
         margin-right:10px;
@@ -2744,16 +2737,7 @@ h1,.h1-title{
         bottom:220px;
     }
 
-    .about-us-banner-text{
-        left:230px;
-        bottom:185px;
-        font-size:14px;
-    }
 
-    .about-bar{
-        left:250px;
-        bottom:120px;
-    }
 
     .about-bar-rectangle{
         width:18px;
@@ -3163,18 +3147,7 @@ h3,.h3-title{
         bottom:180px;
     }
 
-    .about-us-banner-text{
-        left:150px;
-        bottom:145px;
-        font-size:13px;
-        padding:5px 6px;
-    }
-
-    .about-bar{
-        left:170px;
-        bottom:90px;
-    }
-
+  
     .about-bar-rectangle{
         width:16px;
         min-height:36px;
@@ -3425,16 +3398,6 @@ h3,.h3-title{
         bottom:150px;
     }
 
-    .about-us-banner-text{
-        left:85px;
-        bottom:118px;
-        font-size:12px;
-    }
-
-    .about-bar{
-        left:100px;
-        bottom:70px;
-    }
 
     .about-bar-rectangle{
         width:14px;
@@ -4028,15 +3991,3 @@ h3,.h3-title{
     }
 }
 
-
-/* modal */ 
-.modal-body{
-    position: absolute;
-    top: 0; 
-    left: 50%; 
-    transform: translateX(-50%);
-    width: 555px;
-    min-height: 739px;
-    border: 2px solid whitesmoke; 
-
-}
