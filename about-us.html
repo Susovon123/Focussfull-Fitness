@@ -3,363 +3,1308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-      <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    
-  
- 
-      <!-- Link Swiper's CSS -->
+    <title>ABOUT US</title> 
+           <!-- slick in j query css --> 
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
-    />
-      <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-[#3E3E3E]"> 
-    <div class="about-us-banner relative min-h-[543px] bg-cover bg-no-repeat bg-center ">
-  <header class="absolute top-0 left-0 w-full z-10">
-        <div class="container">
-            <nav class="flex items-center justify-between mt-11">
-
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center ps-2 text-[#58CDFF] font-['rye-regular'] text-2xl no-underline">
-                    <img src="images/Group 5.png" alt="Logo">
-                    Job Portal
-                </a>
-
-                <!-- Navigation -->
-                <ul class="flex items-center  text-white text-base font-['poppins-r'] no-underline">
-                    <li><a href="index.html" class="hover:text-[#58CDFF]  me-12 no-underline">Home</a></li>
-                    <li><a href="#" class="hover:text-[#58CDFF] me-12 no-underline">Job List</a></li>
-                    <li><a href="contact-us.html" class="hover:text-[#58CDFF] me-12 no-underline">Contact</a></li>
-                    <li><a href="about-us.html" class="hover:text-[#58CDFF] me-12 no-underline ">Apply</a></li>
-                </ul>
-
-                <!-- Login Button -->
-                <a href="#" class="cmn-btn inline-block bg-[#58CDFF] px-7 py-3 text-white font-['poppins-r'] rounded-lg no-underline">
-                    Login
-                </a>
-
-            </nav>
-        </div>
-    </header>  
-    <div class="absolute z-20 capitalize top-[138px] left-[403px]">
-  <h1 class="text-[#ffffff] font-['Sansita-r'] text-[60px]  font-normal mx-[54px]"> apply for job</h1> 
-<p class="text-center max-w-[530px] mx-auto text-white">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestiae mollitia velit similique? Natus, quisquam! Ullam beatae alias voluptatibus amet vel quasi libero.
-</p>
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    /> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> 
+  <!-- AOS --> 
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   
-</div>
-</div>
-<!-- apply for job -->
-  <section class="apply-for-job-form py-28">
+  
+</head>
+<body>
+    <header class="header">
     <div class="container">
+        <nav class="nav-bar">
+            <!-- Logo (Shared) -->
+            <div class="logo"> 
+                <a href="index.html">Fitin</a>
+            </div>  
+            
+            <!-- Desktop Links (Hidden on mobile) -->
+            <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li> 
+                    <select name="destination" id="destination">
+                        <option value="Destination">Destination</option>
+                    </select>
+                </li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><input type="search" placeholder="Search..."></li>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+            </ul>
 
-        <div class="w-full min-h-[934px] py-[68px] px-[44px] shadow-[10px_10px_15px_10px_#000000] hover:shadow-[5px_5px_28px_1px_#58CDFF] duration-1000">
-            <form action="#" method="post">
+            <div class="nav-controls">
+                <div class="cmn-btn">
+                    <a href="modal.html">Login/Create Account</a>
+                    <i class="fas fa-arrow-right arrow-icon"></i>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
 
-                <div class="grid grid-cols-2 gap-x-5 gap-y-10">
-
-                    <!-- Username -->
-                    <div class="flex flex-col">
-                        <label for="username" class="text-white font-medium text-[20px] capitalize">
-                            Username
-                        </label>
-
-                        <input
-                            type="text"
-                            id="username"
-                            placeholder="Enter Your Username"
-                            class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white"
-                        >
-                        <p id="u-msg"></p>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="flex flex-col">
-                        <label for="email" class="text-white font-medium text-[20px] capitalize">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="Example@gmail.com"
-                            class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white"
-                        >
-                        <p id="e-msg"></p>
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="text-white font-medium text-[20px]">
-                            Phone
-                        </label>
-
-                        <input
-                            type="text"
-                            placeholder="Enter Your Phone Number"
-                            class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white Phone"
-                        > 
-                        <p id="p-msg"></p>
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="text-white font-medium text-[20px]">
-                            Apply For
-                        </label>
-
-                        <select class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white bg-[#3E3E3E]">
-                            <option value="">Medical</option>
-                            <option value="">Doctor</option>
-                            <option value="">Nurse</option>
-                        </select>
-                    </div>
-
-                    <!-- Experience -->
-                    <div class="flex flex-col">
-                        <label class="text-white font-medium text-[20px]">
-                            Years Of Experience
-                        </label>
-
-                        <select class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white bg-[#3E3E3E]">
-                            <option value="">None</option>
-                            <option value="">1 Year</option>
-                            <option value="">2 Years</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="text-white font-medium text-[20px]">
-                            Can We Call You?
-                        </label>
-
-                        <div class="flex items-center mt-[40px]">
-                            <input type="radio" name="call">
-
-                            <label class="ml-3 text-[#9E9C9C]">
-                                Accept with pleasure
-                            </label>
-
-                            <input type="radio" name="call" class="ml-6">
-
-                            <label class="ml-3 text-[#9E9C9C]">
-                                Accept with pleasure
-                            </label>
+            <!-- Mobile Sliding Drawer (Hidden on desktop) -->
+            <div class="mobile-navbar">
+                   <div class="logo"> 
+                <a href="index.html">Fitin</a>
+            </div>  
+                <div class="mobile-nav-slide">
+                  
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                      <li><a href="workout.html">workout</a></li>
+                    </ul>
+                    
+                   
+                    <div class="mobile-right">
+                        <div class="cmn-btn">
+                            <a href="modal.html">Login/Create Account</a>
+                            <i class="fas fa-arrow-right arrow-icon"></i>
                         </div>
                     </div>
-                    <div class="flex flex-col">
-                        <label class="text-white font-medium text-[20px]">
-                            Your Preferences
-                        </label>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- about-us-banner --><!-- about banner -->
+<section class="about-banner cmn-gap1">
+    <div class="container"> 
+        <h1 class="h1-title">
+            <span class="color">About</span> us
+        </h1> 
+        <p class="about-us-banner-text">
+            Home <span class="color">. About Us</span>
+        </p>
+        <div class="about-bar">
+            <div class="about-bar-rectangle"></div>
+            <div class="about-bar-rectangle"></div>
+            <div class="about-bar-rectangle"></div>
+        </div>
+    </div>
+</section> 
 
-                        <select class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white bg-[#3E3E3E]">
-                            <option>Medical</option>
-                        </select>
+<!-- Who We Are -->
+<section class="about-our-gym cmn-gap3">
+    <div class="container">
+        
+        <!-- Header Row -->
+        <div class="row">
+            <div class="col50">
+                <div class="about-our-gym-content">
+                    <div class="about-our-gym-circle"></div>
+                    <h2 class="h2-title cmn-gap7">
+                        Who We Are
+                    </h2>
+                    <div class="bar2">
+                        <div class="bar-rectangle2"></div>
+                        <div class="bar-rectangle2"></div>
+                        <div class="bar-rectangle2"></div>
                     </div>
-                    <div class="flex flex-col">
-                        <label class="text-white font-medium text-[20px]">
-                            Period Preferences
-                        </label>
+                </div>
+            </div>
+            <div class="col50">
+                <h3 class="h3-title">
+                    Empowering Every Body to Move Stronger, Live Better, and Go Further
+                </h3>
+            </div>
+        </div>
 
-                        <select class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white bg-[#3E3E3E]">
-                            <option>Day Time Shift</option>
-                            <option>Night Time Shift</option>
-                        </select>
+        <!-- Content Row -->
+        <div class="row cmn-gap6">
+            <div class="col50">
+                <p class="cmn-p4">
+                    Nunc vivamus quisque laoreet a porta risus volutpat sit nibh sociosqu cubilia.
+                    At adipiscing auctor ultricies velit libero ligula imperdiet sodales tellus aliquam urna.
+                </p>
+                
+                <!-- Features Grid/Lists -->
+                <div class="flex">
+                    <div class="about-us-wrapper-box">
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Himenaeos pellentesque</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Elementum ridiculus</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Rutrum convallis</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Pellentesque maecenas</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Cubilia tincidunt</p>
+                        </div>
                     </div>
-                    <div class="flex flex-col">
-                        <label class="text-white font-medium text-[20px]">
-                            Interested In
-                        </label>
-
-                        <select class="rounded-[10px] border-2 border-white px-[38px] py-[29px] mt-[15px] text-white bg-[#3E3E3E]">
-                            <option>Full Time Job</option>
-                            <option>Part Time Job</option>
-                        </select>
+                    
+                    <div class="about-us-wrapper-box">
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Himenaeos pellentesque</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Elementum ridiculus</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Rutrum convallis</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Pellentesque maecenas</p>
+                        </div>
+                        <div class="about-us-element flex">
+                            <div class="about-us-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="about-us-wrapper-text">Cubilia tincidunt</p>
+                        </div>
                     </div>
-                    <div class="flex flex-col">
-                        <label class="text-white font-medium text-[20px]">
-                            Your Resume
-                        </label>
+                </div>
 
-                        <input
-                            type="file"
-                            class="mt-[25px] bg-[#d9d9d9] rounded-[10px] py-4 px-4"
+                <!-- Contact/Support Box -->
+                <div class="about-our-gym-content">
+                    <div class="call-now">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="call-now-content">
+                        <p class="call-now-text">
+                            CUSTOMER SUPPORT
+                        </p>
+                        <p class="call-now-text1">
+                            (888)4000-2424
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Column -->
+            <div class="col50">
+                <div class="about-our-gym-img-wrapper">
+                    <figure>
+                        <img
+                            src="images/about-us/farkas-mario-AXiOXzQ6PBU-unsplash 1.png"
+                            alt="About Our Gym"
+                            loading="lazy"
+                            class="about-our-gym-img"
                         >
-                    </div>
-
+                    </figure>
                 </div>
-
-                <!-- Submit -->
-                <div class="flex justify-center mt-[50px]">
-                 <button type="button"
-   class="text-white capitalize cmn-btn inline-block bg-[#58CDEF] px-7 py-3 rounded-lg no-underline"
-   onclick="saved_data()">
-    Submit
-                </button>
-                </div>
-
-            </form>
-
+            </div>
         </div>
 
     </div>
 </section>
-    <!-- footer -->
-    <footer class="footer bg-[#222222] min-h-[493px]">
-<div class="container">
-    <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 flex">
-        <div>
-               <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-2 text-[#58CDFF] font-['rye-regular'] text-2xl mt-[47px] no-undeline">
-                    <img src="images/Group 5.png" alt="Logo">
-                    Job Portal
-                </a> 
-                <p class="mt-[27px] text-[#ffffff] font-['poppins-r'] text-[16px] font-normal leading-[25px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde repudiandae excepturi minima perferendis. Tempore eveniet iusto et quasi accusamus fugiat temporibus sint iste </p>
-                <div class="w-full max-w-[600px]">
-    <div class="flex items-center bg-[#E8E8E8] rounded-[18px] overflow-hidden mt-[23px]">
-
-     <form action="#" method="get">
-           <!-- Input -->
-        <input
-            type="email"
-            placeholder="Your email"
-            class="w-full h-[64px] bg-transparent px-[22px] py-[18px] outline-none text-[18px] font-['Poppins'] placeholder:text-[#4A4A4A]"
-        >
-     </form>
-
-        <!-- Button -->
-        <a
-            href="#"
-            class="w-[72px] h-[64px] bg-[#58CDFF] flex items-center justify-center  rounded-[10px] hover:bg-[#43c4fb] my-[6px] me-[8px]"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke-width="2"
-                 stroke="currentColor"
-                 class="w-8 h-8 text-black">
-                <path stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M5 12h14M13 5l7 7-7 7"/>
-            </svg>
-        </a>
-
+<!-- our location -->
+<section class="our-location cmn-gap3">
+ <div class="container">
+  <div class="about-our-gym-content">
+   <div class="about-our-gym-circle">
+   </div>
+   <h2 class="h2-title cmn-gap7">
+    Our location
+   </h2>
+   <div class="bar2">
+    <div class="bar-rectangle2">
     </div>
-</div>
-        </div>
-        <div class=" ms-[99px] mt-[55px]">
-            <ul class="list-none text-[#ffffff] hover: text-[#58CDFF] duration-700"> 
-                <li class="font-['poppins-r'] text-[20px] font-medium"><a href="#">About Us</a></li>
-                <li class="font-['poppins-r'] text-[16px] font-normal pt-[45px] leading-[25px]"><a href="#"> Careers</a></li>
-                <li class="font-['poppins-r'] text-[16px] font-normal leading-[25px] pt-[20px]"><a href="#"> our mission</a></li>
-                <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px] "><a href="#"> how it started</a></li>
-                <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px]"><a href="#">sucesses</a></li>
+    <div class="bar-rectangle2">
+    </div>
+    <div class="bar-rectangle2">
+    </div>
+   </div>
+  </div>
+  <h3 class="h3-title cmn-gap6">
+   Your
+   <span class="color">
+    Fitness
+   </span>
+   Journery Starts Here  Select The
+   <span class="color">
+    Catagory
+   </span>
+  </h3>
+  <div class="row">
+   <div class="col30">
+    <p class="our-location-head-sub cmn-gap5">
+     50
+     <span class="color">
+      +
+     </span>
+    </p>
+    <p class="our-location-text-sub">
+     Catagories
+    </p>
+   </div>
+   <div class="col70">
+    <p class="cmn-gap5">
+     Our training categories are carefully structured to help you push limits, track results, and evolve both physically and mentally. You can enroll in focused programs like Power Build, CrossFit Challenge, or Yoga Flow, and experience results that go beyond the gym floor. Every routine, every rep, and every breath brings you one step closer to your strongest self. With expert support, personalized guidance, and a motivating community, you’ll stay consistent and inspired every day. Choose your category, commit to your plan, and let’s start building the best version of you.
+    </p>
+   </div>
+  </div>
+  <div class="slider cmn-gap1">
+   <div class="slider-box">
+    <p class="slider-text">
+     Transformation
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Personal
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Functional
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Endurance
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Power
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Mobility
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Agility
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Recovery
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Cardio
+    </p>
+   </div>
+   <div class="slider-box">
+    <p class="slider-text">
+     Wellness
+    </p>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-up" data-aos-duration="1000">
+     <div class="workout-box">
+      <div class="workout-box-shape">
+       Strength
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by ethan cross
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        01
+       </div>
+       <p class="workout-sub-text">
+        power build program
+       </p>
+       <p class="workout-sub-text1">
+        Focus on muscle growth and compound lifts.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-down" data-aos-duration="1000">
+     <div class="workout-box1">
+      <div class="workout-box-shape">
+       WELLNESS
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by tren morgan
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        02
+       </div>
+       <p class="workout-sub-text">
+        Yoga Flow
+       </p>
+       <p class="workout-sub-text1">
+        Improve flexibility and mindfulness.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-down" data-aos-duration="1000">
+     <div class="workout-box3">
+      <div class="workout-box-shape">
+       Cardio
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by Marcus Colle
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        03
+       </div>
+       <p class="workout-sub-text">
+        Cardio Blast
+       </p>
+       <p class="workout-sub-text1">
+        Treadmill, cycling, and jump rope sessions.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-up" data-aos-duration="1000">
+     <div class="workout-box4">
+      <div class="workout-box-shape">
+       Strength
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by ethan cross
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        04
+       </div>
+       <p class="workout-sub-text">
+        Weightlifting 101
+       </p>
+       <p class="workout-sub-text1">
+        Learn Olympic and free weight techniques.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-up" data-aos-duration="1000">
+     <div class="workout-box5">
+      <div class="workout-box-shape">
+       combat
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by Damian brooks
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        05
+       </div>
+       <p class="workout-sub-text">
+        BoxFit Training
+       </p>
+       <p class="workout-sub-text1">
+        Boxing drills for strength and agility.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-down" data-aos-duration="1000">
+     <div class="workout-box6">
+      <div class="workout-box-shape">
+       strength
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by ethan cross
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        06
+       </div>
+       <p class="workout-sub-text">
+        Functional Strength
+       </p>
+       <p class="workout-sub-text1">
+        Core stability and endurance workouts.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-up" data-aos-duration="1000">
+     <div class="workout-box3">
+      <div class="workout-box-shape">
+       WELLNESS
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by tren morgan
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        07
+       </div>
+       <p class="workout-sub-text">
+        power build program
+       </p>
+       <p class="workout-sub-text1">
+        Focus on muscle growth and compound lifts.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-down" data-aos-duration="1000">
+     <div class="workout-box1">
+      <div class="workout-box-shape">
+       WELLNESS
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by tren morgan
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        08
+       </div>
+       <p class="workout-sub-text">
+        power build program
+       </p>
+       <p class="workout-sub-text1">
+        Focus on muscle growth and compound lifts.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-up" data-aos-duration="1000">
+     <div class="workout-box5">
+      <div class="workout-box-shape">
+       WELLNESS
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by tren morgan
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        09
+       </div>
+       <p class="workout-sub-text">
+        power build program
+       </p>
+       <p class="workout-sub-text1">
+        Focus on muscle growth and compound lifts.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col50 cmn-gap2">
+    <div class="workout-content" data-aos="fade-down" data-aos-duration="1000">
+     <div class="workout-box3">
+      <div class="workout-box-shape">
+       WELLNESS
+      </div>
+      <div class="about-bar1">
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+       <div class="about-bar-rectangle1">
+       </div>
+      </div>
+      <p class="workout-head">
+       by tren morgan
+      </p>
+     </div>
+     <div class="flex">
+      <div class="about-workout-box">
+       <div class="workout-shape2">
+        10
+       </div>
+       <p class="workout-sub-text">
+        power build program
+       </p>
+       <p class="workout-sub-text1">
+        Focus on muscle growth and compound lifts.
+       </p>
+      </div>
+      <div class="about-workout-box">
+       <a class="workout-btn" href="#">
+        Enroll Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+        <!-- call to action -->
+        <section class="call-to-action cmn-gap3">
+    <div class="container">
+        <div class="row">
 
-            </ul>
-        </div>
-               <div class=" ms-[109px] mt-[55px]">
-            <ul class="list-none text-[#ffffff] hover: text-[#58CDFF] duration-700 "> 
-                <li class="font-['poppins-r'] text-[20px] font-medium"><a href="#">For Creative</a></li>
-                <li class="font-['poppins-r'] text-[16px]  font-normal pt-[45px] leading-[25px]"><a href="#">Explore positions</a></li>
-                <li class="font-['poppins-r'] text-[16px] font-normal leading-[25px] pt-[20px]"><a href="#">About suggestions</a></li>
-                <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px] "><a href="#">How it works?</a></li>
-                <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px]"><a href="#">Getting started</a></li>
-    <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px]"><a href="#">Wgich plan</a></li>
-            </ul>
-        </div>
-             <div class=" ms-[109px] mt-[55px]">
-            <ul class="list-none text-[#ffffff] hover: text-[#58CDFF] duration-700"> 
-                <li class="font-['poppins-r'] text-[20px]  font-medium"><a href="#">Resource</a></li>
-                <li class="font-['poppins-r'] text-[16px] font-normal pt-[45px] leading-[25px]"><a href="#">Our Userbase</a></li>
-                <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px]"><a href="#">Why pick us?</a></li>
-                <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px] "><a href="#"> How it works?</a></li>
-                <li class="font-['poppins-r'] text-[16px] font-normal leading-[25px] pt-[20px]"><a href="#">Getting Plan</a></li> 
-                   <li class="font-['poppins-r'] text-[16px]  font-normal leading-[25px] pt-[20px]"><a href="#">Wgich plan</a></li>
+            <div class="col50">
+                <div class="call-to-action-box">
 
-            </ul>
+                    <div class="about-our-gym-content cmn-gap2">
+                        <div class="about-our-gym-circle"></div>
+
+                        <h2 class="h2-title">
+                            Get in touch
+                        </h2>
+
+                        <div class="bar2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div>
+                    </div>
+
+                    <p class="call-to-action-head">
+                        READY TO TRANSFORM YOUR BODY?
+                    </p>
+
+                    <p>
+                        Start your fitness journey today with expert-led
+                        programs built for real results.
+                    </p>
+
+                    <div class="call-list">
+                        <span>Complimentary gym kit</span>
+                        <span>Free session with trainer</span>
+                    </div>
+
+                    <p class="call-to-action-sub-head">
+                        19,999
+                    </p>
+
+                    <p class="offer">
+                        OFF YOUR MEMBERSHIP PLAN
+                    </p>
+
+                    <a href="#" class="call-btn">
+                        ENROLL NOW
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col50">
+                <div class="call-to-action-box1">
+
+                    <div class="row">
+
+                        <div class="col50">
+                            <form action="#" method="get">
+                                <label>YOUR FULL NAME</label>
+                                <input type="text">
+                            </form>
+                        </div>
+
+                        <div class="col50">
+                            <form action="#" method="get">
+                                <label>EMAIL ADDRESS</label>
+                                <input type="email">
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <form action="#">
+                        <label>MESSAGE</label>
+                        <textarea></textarea>
+                    </form>
+
+                    <a href="#" class="submit-btn">
+                        GET STARTED TODAY
+                    </a>
+
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
-    </footer>
-   
-    <script>
+</section>
+<!-- how it works -->
+ <section class="how-it-works cmn-gap3">
+    <div class="container">
         
-// Form Validation
+        <div class="row">
+            <div class="col50">
+                <div class="about-our-gym-content">
+                    <div class="about-our-gym-circle"></div>
+                    <h2 class="h2-title cmn-gap7">
+                        How it works
+                    </h2>
+                    <div class="bar2">
+                        <div class="bar-rectangle2"></div>
+                        <div class="bar-rectangle2"></div>
+                        <div class="bar-rectangle2"></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col50">
+                <h3 class="h3-title">
+                    Real Stories, Real People ,Real Transformation
+                </h3>
+            </div>
+        </div> 
 
+        <div class="row cmn-gap2">
+            
+            <div class="col33">
+                <div class="how-it-works-box"> 
+                    <div class="how-it-works-box1">
+                        01
+                    </div> 
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.0371 11.5488L19.3008 11.2852L21.7266 11.707C21.832 12.2871 21.9375 12.8672 21.9375 13.5C21.9375 18.1934 18.1406 21.9375 13.5 21.9375C8.80664 21.9375 5.0625 18.1934 5.0625 13.5C5.0625 8.85938 8.80664 5.0625 13.5 5.0625C14.1328 5.0625 14.7129 5.16797 15.293 5.27344L15.7148 7.69922L15.4512 7.96289C14.8184 7.75195 14.1855 7.59375 13.5 7.59375C10.2305 7.59375 7.59375 10.2832 7.59375 13.5C7.59375 16.7695 10.2305 19.4062 13.5 19.4062C16.7168 19.4062 19.4062 16.7695 19.4062 13.5C19.4062 12.8145 19.248 12.1816 19.0371 11.5488ZM24.1523 11.127H24.2051L26.209 9.07031C26.7363 10.4414 27 11.9707 27 13.5C27 20.9883 20.9355 27 13.5 27C6.01172 27 0 20.9883 0 13.5C0 6.06445 6.01172 0 13.5 0C15.0293 0 16.5586 0.263672 17.9297 0.791016L15.873 2.79492C15.1348 2.63672 14.291 2.53125 13.5 2.53125C7.43555 2.53125 2.53125 7.48828 2.53125 13.5C2.53125 19.5645 7.43555 24.4688 13.4473 24.4688C19.5117 24.4688 24.416 19.5645 24.416 13.5C24.416 12.709 24.3633 11.8652 24.1523 11.127ZM19.248 9.54492L14.3438 14.3965C13.8691 14.9238 13.0781 14.9238 12.6035 14.3965C12.0762 13.9219 12.0762 13.1309 12.6035 12.6035L17.4551 7.75195L16.9805 5.11523C16.9277 4.58789 17.0859 4.00781 17.4551 3.63867L20.1445 0.949219C20.6191 0.474609 21.3047 0.632812 21.5684 1.21289L22.7812 4.21875L25.7871 5.43164C26.3672 5.69531 26.4727 6.43359 26.0508 6.85547L23.3613 9.54492C22.9922 9.91406 22.4121 10.0723 21.8848 10.0195L19.248 9.54492Z" fill="#F2FF00"/>
+                    </svg>
+                    <p class="how-it-works-head">Goal Setting</p>
+                    <div class="how-it-works-bar">
+                        <div class="bar2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                    </div>
+                    <p class="how-it-works-text">
+                        Define clear fitness goals tailored to your needs.
+                    </p>
+                </div>
+            </div>
 
-const saved_data = () => {
+            <div class="col33">
+                <div class="how-it-works-box"> 
+                    <div class="how-it-works-box1">
+                        02
+                    </div> 
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.0371 11.5488L19.3008 11.2852L21.7266 11.707C21.832 12.2871 21.9375 12.8672 21.9375 13.5C21.9375 18.1934 18.1406 21.9375 13.5 21.9375C8.80664 21.9375 5.0625 18.1934 5.0625 13.5C5.0625 8.85938 8.80664 5.0625 13.5 5.0625C14.1328 5.0625 14.7129 5.16797 15.293 5.27344L15.7148 7.69922L15.4512 7.96289C14.8184 7.75195 14.1855 7.59375 13.5 7.59375C10.2305 7.59375 7.59375 10.2832 7.59375 13.5C7.59375 16.7695 10.2305 19.4062 13.5 19.4062C16.7168 19.4062 19.4062 16.7695 19.4062 13.5C19.4062 12.8145 19.248 12.1816 19.0371 11.5488ZM24.1523 11.127H24.2051L26.209 9.07031C26.7363 10.4414 27 11.9707 27 13.5C27 20.9883 20.9355 27 13.5 27C6.01172 27 0 20.9883 0 13.5C0 6.06445 6.01172 0 13.5 0C15.0293 0 16.5586 0.263672 17.9297 0.791016L15.873 2.79492C15.1348 2.63672 14.291 2.53125 13.5 2.53125C7.43555 2.53125 2.53125 7.48828 2.53125 13.5C2.53125 19.5645 7.43555 24.4688 13.4473 24.4688C19.5117 24.4688 24.416 19.5645 24.416 13.5C24.416 12.709 24.3633 11.8652 24.1523 11.127ZM19.248 9.54492L14.3438 14.3965C13.8691 14.9238 13.0781 14.9238 12.6035 14.3965C12.0762 13.9219 12.0762 13.1309 12.6035 12.6035L17.4551 7.75195L16.9805 5.11523C16.9277 4.58789 17.0859 4.00781 17.4551 3.63867L20.1445 0.949219C20.6191 0.474609 21.3047 0.632812 21.5684 1.21289L22.7812 4.21875L25.7871 5.43164C26.3672 5.69531 26.4727 6.43359 26.0508 6.85547L23.3613 9.54492C22.9922 9.91406 22.4121 10.0723 21.8848 10.0195L19.248 9.54492Z" fill="#F2FF00"/>
+                    </svg>
+                    <p class="how-it-works-head1">Structured Tranning</p>
+                    <div class="how-it-works-bar">
+                        <div class="bar2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                    </div>
+                    <p class="how-it-works-text">
+                        Follow guided workouts built for steady progress.
+                    </p>
+                </div>
+            </div>
 
-    // Get input values
-    const username = document.getElementById("username").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("Phone").value.trim();
+            <div class="col33">
+                <div class="how-it-works-box"> 
+                    <div class="how-it-works-box1">
+                        03
+                    </div> 
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.0371 11.5488L19.3008 11.2852L21.7266 11.707C21.832 12.2871 21.9375 12.8672 21.9375 13.5C21.9375 18.1934 18.1406 21.9375 13.5 21.9375C8.80664 21.9375 5.0625 18.1934 5.0625 13.5C5.0625 8.85938 8.80664 5.0625 13.5 5.0625C14.1328 5.0625 14.7129 5.16797 15.293 5.27344L15.7148 7.69922L15.4512 7.96289C14.8184 7.75195 14.1855 7.59375 13.5 7.59375C10.2305 7.59375 7.59375 10.2832 7.59375 13.5C7.59375 16.7695 10.2305 19.4062 13.5 19.4062C16.7168 19.4062 19.4062 16.7695 19.4062 13.5C19.4062 12.8145 19.248 12.1816 19.0371 11.5488ZM24.1523 11.127H24.2051L26.209 9.07031C26.7363 10.4414 27 11.9707 27 13.5C27 20.9883 20.9355 27 13.5 27C6.01172 27 0 20.9883 0 13.5C0 6.06445 6.01172 0 13.5 0C15.0293 0 16.5586 0.263672 17.9297 0.791016L15.873 2.79492C15.1348 2.63672 14.291 2.53125 13.5 2.53125C7.43555 2.53125 2.53125 7.48828 2.53125 13.5C2.53125 19.5645 7.43555 24.4688 13.4473 24.4688C19.5117 24.4688 24.416 19.5645 24.416 13.5C24.416 12.709 24.3633 11.8652 24.1523 11.127ZM19.248 9.54492L14.3438 14.3965C13.8691 14.9238 13.0781 14.9238 12.6035 14.3965C12.0762 13.9219 12.0762 13.1309 12.6035 12.6035L17.4551 7.75195L16.9805 5.11523C16.9277 4.58789 17.0859 4.00781 17.4551 3.63867L20.1445 0.949219C20.6191 0.474609 21.3047 0.632812 21.5684 1.21289L22.7812 4.21875L25.7871 5.43164C26.3672 5.69531 26.4727 6.43359 26.0508 6.85547L23.3613 9.54492C22.9922 9.91406 22.4121 10.0723 21.8848 10.0195L19.248 9.54492Z" fill="#F2FF00"/>
+                    </svg>
+                    <p class="how-it-works-head1">Progress Training</p>
+                    <div class="how-it-works-bar">
+                        <div class="bar2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                    </div>
+                    <p class="how-it-works-text">
+                        Define clear fitness goals tailored to your needs.
+                    </p>
+                </div>
+            </div>
 
-    // Get message elements
-    const user_msg = document.getElementById("u-msg");
-    const email_msg = document.getElementById("e-msg");
-    const phone_msg = document.getElementById("p-msg");
+        </div>
+    </div>
+</section>
+<!-- fitness journey -->
+<section class="fitness-journey">
+    <div class="container">
+        <div class="fitness-journey-box">
+            <p class="fitness-journey-box-head">
+                your fitness journery starts with our professional trainers
+            </p> 
+            <p class="fitness-journery-box-sub-text">
+                Ultrices quam mattis posuere porttitor tellus rhoncus tristique. Primis aliquam dignissim interdum vel suscipit sodales.
+            </p>
+            <a href="#" class="workout-btn">
+                Discover More
+            </a>
+        </div>
+    </div>
+</section>
+<!-- BMI Calculator -->
+<section class="bmi-calculator cmn-gap3">
+    <div class="container">
+        <div class="row">
+            <div class="col50">
+                <div class="about-our-gym-content">
+                    <div class="about-our-gym-circle"></div>
+                    <h2 class="h2-title cmn-gap7">
+                        BMI Calculator
+                    </h2>
+                    <div class="bar2">
+                        <div class="bar-rectangle2"></div>
+                        <div class="bar-rectangle2"></div>
+                        <div class="bar-rectangle2"></div>
+                    </div> 
+                </div>
+                
+                <h3 class="h3-title">
+                    Calculate Your <span class="color">BMI </span> 
+                </h3>
+                
+                <p class="cmn-gap5">
+                    It helps you understand whether you’re underweight, healthy, or need to improve your fitness level. Track your progress as you train and maintain the perfect balance between weight and wellness. Start now to set smarter goals for a stronger, healthier you..
+                </p>
+                <div class="flex cmn-gap2">
+                    <div class="col50">
+                        <div class="bar2 cmn-gap2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                        <form action="#" method="get">
+                            <label class="cmn-gap">height</label>
+                            <input type="number" placeholder="enter your height" class="cmn-gap2">
+                        </form>
+                    </div> 
+                    <div class="col50">
+                        <div class="bar2 cmn-gap2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                        <form action="#" method="get">
+                            <label class="cmn-gap2">weight</label>
+                            <input type="number" placeholder="enter your weight" class="cmn-gap2">
+                        </form>
+                    </div> 
+                </div> 
+                <div class="flex cmn-gap2">
+                    <div class="col50">
+                        <div class="bar2 cmn-gap2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                        <form action="#" method="get">
+                            <label class="cmn-gap2">Age</label>
+                            <input type="text" placeholder="enter your age" class="cmn-gap2">
+                        </form>
+                    </div> 
+                    <div class="col50">
+                        <div class="bar2 cmn-gap2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                        <form action="#" method="get">
+                            <label class="cmn-gap2">gender</label>
+                            <input type="text" placeholder="enter your gender" class="cmn-gap2">
+                        </form>
+                    </div> 
+                </div> 
+                <div class="flex cmn-gap2">
+                    <div class="col50">
+                        <div class="bar2 cmn-gap2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                        <form action="#" method="get">
+                            <label class="cmn-gap2">gender</label>
+                            <input type="text" placeholder="enter your gender" class="cmn-gap2">
+                        </form>
+                    </div> 
+                    <div class="col50">
+                        <div class="bar2 cmn-gap2">
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                            <div class="bar-rectangle2"></div>
+                        </div> 
+                        <form action="#" method="get">
+                            <label class="cmn-gap2">YOUR FULL NAME</label>
+                            <input type="text" placeholder="enter your name" class="cmn-gap2">
+                        </form>
+                    </div> 
+                </div>
 
-    // Clear previous messages
-    user_msg.innerHTML = "";
-    email_msg.innerHTML = "";
-    phone_msg.innerHTML = "";
+                <a href="#" class="workout-btn">Discover More </a>
+            </div> 
+            <div class="col50">
+                <div class="bmi-calculator-right-box">
+                    <div class="bmi-calculator-right-box-gradient"></div> 
+                    <figure class="bmi-calculator-img">
+                        <img 
+                            src="images/sportive-woman-sportswear-straigth-holding-big-dumbbells-white 3.png" 
+                            alt="" 
+                            loading="lazy"
+                        >
+                    </figure>
+                </div>
+            </div>
 
-    // Message color
-    user_msg.style.color = "white";
-    email_msg.style.color = "white";
-    phone_msg.style.color = "white";
+        </div>
+    </div>
+</section>
+<section class="company-slider cmn-gap3">
+<div class="container">
+       <div class="about-our-gym-content" >
+                <div class="about-our-gym-circle">
 
-    // Validation flag
-    let isValid = true;
+                </div>
+                   <h2 class="h2-title cmn-gap7">
+                 BMI Calculator
+                </h2>
+                 <div class="bar2">
+                <div class="bar-rectangle2"></div>
+                   <div class="bar-rectangle2"></div>
+                      <div class="bar-rectangle2"></div>
+            </div> 
+            </div>
+              <div class="slider cmn-gap5">
+                    <div><svg width="150" height="87" viewBox="0 0 150 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_812_603)">
+<g clip-path="url(#clip1_812_603)">
+<path d="M13.5309 46.5255H16.4304V51.9309H6.18557V46.5255H9.08505V43.2436H0V46.5255H2.89948V62.7417H0V66.0236H9.08505V62.7417H6.18557V55.2128H16.4304V62.7417H13.5309V66.0236H22.616V62.7417H19.7165V46.5255H22.616V43.2436H13.5309M123.325 62.5487H114.433V55.0197H122.165V51.7378H114.433V46.3324H123.518V49.4212H126.611V43.0506H108.054V46.3324H111.147V62.5487H108.054V65.8305H126.611V58.3016H123.325M45.6186 58.3016H42.3325V62.5487H33.4407V55.0197H41.1727V51.7378H33.4407V46.3324H42.5258V49.4212H45.6186V43.0506H27.0619V46.3324H30.1546V62.5487H27.0619V65.8305H45.6186M115.206 42.0853H121.778L120.039 40.1548H113.273M144.588 52.8961C142.268 52.317 140.722 52.317 138.402 51.5448C136.276 50.7726 135.889 49.6143 135.889 48.649C135.889 47.8768 136.856 45.5602 140.142 45.5602C143.428 45.5602 145.554 47.6838 145.747 49.6143H148.84V43.0506H145.747V44.4019V44.788C145.747 44.788 145.554 44.595 145.361 44.2089C144.394 43.2436 142.461 42.4714 139.755 42.4714C136.469 42.4714 132.41 44.595 132.41 48.649C132.41 52.51 135.309 53.8614 137.629 54.6336C139.948 55.2127 141.302 55.2128 143.235 55.7919C145.168 56.3711 146.521 57.5294 146.521 59.2668C146.521 61.0043 145.554 63.1278 141.302 63.1278C137.049 63.1278 135.309 60.8112 134.923 57.5294H131.83V65.4444H134.923V63.9L134.729 63.5139C134.729 63.5139 134.923 63.707 135.116 64.0931C136.662 65.2514 138.789 66.0236 141.495 66.0236C144.394 66.0236 149.613 64.4792 149.613 59.0738C150 55.5989 148.067 53.8614 144.588 52.8961ZM94.5232 62.5487V65.8305H103.802V62.5487H100.709V46.3324H103.802V43.0506H95.4897L90.0773 56.178L89.884 56.7572L89.6907 56.178L84.2783 43.0506H75.9665V46.3324H79.0593V62.5487H75.9665V65.8305H85.2448V62.5487H82.3454V47.6838V46.7185L82.5387 47.4907L88.9175 62.5487H90.8505L97.2294 47.4907L97.4227 46.7185V47.6838V62.7417M31.5077 33.7842V34.5564H34.6005C34.2139 34.3633 34.0206 34.1703 33.634 33.7842H31.5077ZM115.206 33.7842H113.66C113.273 33.7842 112.887 34.1703 112.887 34.5564H115.399L115.206 33.7842ZM31.5077 36.6799H115.206V35.1355H61.2758C59.9227 35.7147 58.183 35.7147 56.8299 35.1355H40.5928C39.0464 35.9077 37.3067 35.7147 35.7603 35.1355H31.5077V36.6799ZM55.0902 33.7842H42.5258C42.5258 33.7842 41.9459 34.3633 41.7526 34.5564H56.0567C55.4768 34.1703 55.2835 33.9772 55.0902 33.7842Z" fill="white"/>
+<path d="M32.8608 27.9923C32.6675 28.5714 32.6675 28.9575 32.6675 29.5367C32.6675 32.4324 35.1804 34.9421 38.2732 34.749C41.1727 34.749 43.4922 32.4324 43.4922 29.5367C43.4922 28.9575 43.2989 28.3784 43.1056 27.7992C43.6855 27.6062 44.2654 27.6062 44.8453 27.4131C45.0386 27.4131 45.0386 27.2201 44.8453 27.2201C44.0721 27.027 43.1056 26.834 42.3324 26.6409C41.366 25.2896 39.6263 24.3243 37.8866 24.3243C37.1134 24.3243 36.5335 24.5174 35.9536 24.7104C35.7603 24.3243 35.7603 23.7452 35.9536 23.166C36.5335 22.2008 37.6933 22.0077 38.6598 21.8147C39.0464 21.8147 39.8196 21.8147 39.8196 22.0077C40.0129 22.2008 40.3995 22.2008 40.7861 22.0077C41.1727 22.2008 41.1727 22.2008 41.5593 22.3938C45.0386 23.5521 48.9046 24.1313 52.5773 23.5521C53.1572 24.1313 53.5438 25.0965 53.9304 25.8687C54.1237 26.0618 54.1237 25.6757 56.0567 25.6757C56.6366 25.6757 57.6031 25.6757 58.183 25.6757C56.6366 25.8687 55.4768 26.6409 54.7036 27.7992C53.5438 28.1853 52.5773 28.5714 52.1907 28.7645C52.1907 28.7645 52.1907 28.9575 52.5773 28.9575C53.1572 29.1506 53.7371 29.1506 54.317 29.3436C54.317 29.5367 54.317 29.9228 54.317 30.1158C54.317 32.8185 56.4433 34.9421 59.1495 34.9421C61.8556 34.9421 63.9819 32.8185 63.9819 30.1158C63.9819 29.3436 63.7886 28.5714 63.402 27.7992C63.9819 27.6062 64.5618 27.4131 65.335 27.027C65.9149 27.2201 66.3015 27.6062 66.4948 27.9923C66.8814 28.3784 67.4613 28.1853 67.8479 28.1853C68.4278 27.9923 68.6211 27.4131 68.6211 26.834C68.6211 26.6409 68.6211 26.2548 68.8144 26.0618C69.5876 24.3243 72.6804 24.1313 74.2268 23.7452C74.2268 23.7452 73.4536 24.7104 72.8737 24.9035C72.6804 27.4131 71.7139 29.7297 71.7139 32.2394C72.4871 32.2394 72.4871 33.2046 72.6804 33.5907C72.4871 33.9768 72.1005 33.5907 71.7139 33.7838C70.5541 33.2046 71.9072 32.0463 71.134 31.2741C71.5206 29.1506 72.4871 27.2201 72.2938 25.0965C71.9072 25.0965 71.9072 25.4826 71.7139 25.6757C71.5206 27.7992 70.9407 29.7297 70.3608 31.4672C70.5541 31.6602 70.9407 31.6602 70.9407 32.0463C70.1675 32.4324 70.9407 33.2046 70.7474 33.7838H63.402L62.6288 34.556H74.0335L74.2268 34.1699C72.4871 32.4324 73.2603 29.7297 74.0335 27.7992L75.9665 25.0965C77.5129 24.5174 78.6727 22.3938 80.219 21.8147C80.219 22.5869 79.2526 22.973 78.6727 23.5521C78.0928 24.9035 76.1598 25.0965 75.9665 26.6409C76.7397 27.4131 77.7062 27.9923 78.6727 28.7645C79.6392 29.3436 79.2526 30.5019 80.0258 31.0811C80.2191 31.2741 80.0257 31.4672 79.8325 31.6602C79.0593 31.8533 79.0593 32.4324 79.6392 32.8185C80.0258 33.0116 80.219 33.3977 80.219 33.5907H75C75 33.7838 75.1933 33.9768 75.3866 34.3629H104.381C104.575 33.9768 104.188 33.3977 103.995 33.0116C101.869 32.2394 101.869 30.3089 101.869 28.1853C101.869 28.1853 101.675 27.9923 101.869 27.4131C101.482 27.2201 100.129 23.7452 100.902 21.0425L101.289 20.0772C101.675 19.4981 101.289 19.112 101.482 18.5328L107.668 17.3745C107.861 17.3745 107.668 16.9884 107.668 16.9884L105.735 17.3745C104.188 16.7954 102.062 15.444 100.709 13.5135C101.095 10.4247 100.902 8.10811 100.709 6.37066C101.675 5.59846 102.255 5.0193 102.255 5.0193C102.835 5.40541 103.028 5.21236 103.028 5.0193C102.835 4.82625 102.062 4.44015 102.255 4.05405C102.835 4.2471 103.028 4.05405 103.028 3.66795L101.869 3.861V3.66795C102.062 3.4749 102.448 3.66795 102.835 3.66795C103.222 3.4749 102.835 3.0888 102.835 2.89575C102.062 1.9305 100.515 1.9305 99.549 1.35135C99.3557 0.772201 99.1623 0.579151 98.7757 0.3861C98.5825 0 97.2294 0 96.8428 0C96.6495 0 96.0696 0.579151 96.0696 0.579151C95.2964 0.772201 94.7165 0.3861 93.9433 0C93.9433 0 94.1366 0.772201 94.9098 1.1583C94.3299 1.35135 93.9433 1.9305 93.75 2.7027C92.9768 2.89575 92.7835 3.861 92.9768 4.2471C92.2036 4.6332 92.2036 5.21236 92.5902 5.98456C92.0103 6.37066 92.0103 7.14286 92.2036 7.52896C91.6237 7.91506 92.2036 8.88031 92.2036 9.45946C93.75 9.07336 95.8763 12.7413 98.7757 13.1274C99.3557 10.6178 98.5825 9.26641 98.0026 8.10811C98.5825 7.72201 98.9691 7.33591 99.549 6.94981C99.9355 8.49421 100.129 11.0039 99.7422 13.5135C99.549 13.5135 99.3557 13.3205 99.1624 13.3205C99.1624 13.3205 99.549 13.8996 99.549 14.0927C99.549 14.0927 98.5825 14.6718 96.6495 13.8996C96.0696 15.0579 89.6907 17.9537 89.6907 17.9537C89.884 19.6911 90.8505 20.8494 91.6237 21.8147C92.9768 22.7799 94.5232 23.3591 96.2629 23.7452C96.6495 24.7104 97.8093 27.7992 98.0026 28.3784C98.1959 28.9575 98.3892 28.9575 98.3892 28.9575C98.5825 29.1506 99.1624 30.1158 99.1624 30.695L99.3557 32.4324C99.3557 32.8185 99.9355 32.4324 99.9355 32.8185L99.7422 33.9768H80.4123C80.6056 32.6255 80.0257 31.4672 80.4123 30.3089C79.6391 28.9575 77.5129 27.9923 77.8995 26.2548C78.866 24.9035 82.152 23.5521 81.3788 21.8147C84.2783 20.2703 85.8247 22.7799 88.5309 22.5869C89.4974 22.5869 90.4639 22.3938 91.4304 22.2008C90.2706 21.2355 89.3041 19.8842 88.7242 18.7259C82.9252 21.0425 77.5129 22.973 71.134 24.1313L70.7474 23.9382C70.3608 23.9382 63.402 25.4826 61.6623 26.2548C61.2757 26.0618 60.6959 25.6757 60.116 25.6757H60.3093C60.8892 25.6757 61.8556 25.2896 62.4355 25.0965C65.1417 24.1313 66.1082 20.2703 67.268 17.9537C68.2345 21.6216 70.7474 22.0077 72.1005 21.6216L72.2938 22.7799C72.2938 22.7799 73.4536 22.7799 74.4201 22.3938C74.4201 22.2008 74.2268 21.6216 74.0335 20.8494C74.6134 20.6564 74.8067 20.2703 75.1933 20.2703C75.1933 21.2355 75.3866 22.0077 75 22.3938L78.0928 21.6216C78.6727 18.9189 80.4123 15.0579 83.3118 12.3552C79.4459 10.8108 76.5464 12.5483 75.7732 13.3205C72.1005 14.4788 71.9072 19.4981 72.1005 21.4286C71.5206 21.6216 68.8144 22.3938 67.4613 17.7606C68.0412 15.444 69.3943 13.5135 71.134 11.9691C71.3273 11.7761 71.134 11.583 70.7474 11.7761C67.6546 13.8996 66.4948 17.7606 64.7551 21.0425C63.402 22.973 61.6623 24.1313 58.9562 23.9382C55.6701 23.9382 53.9304 20.4633 52.384 18.1467C50.0644 12.9344 43.8788 14.8649 39.2397 13.7066C39.0464 13.5135 38.4665 12.1622 37.6933 12.1622C37.1134 12.1622 37.6933 12.7413 37.3067 12.9344C36.7268 12.7413 36.3402 12.3552 35.567 12.3552C35.1804 12.3552 34.9871 12.9344 34.9871 13.3205C35.3737 15.0579 37.1134 15.6371 38.4665 16.2162C39.0464 16.9884 38.8531 19.4981 38.2732 20.4633C37.6933 21.4286 35.567 21.0425 35.1804 23.3591C35.1804 23.7452 35.1804 24.3243 35.3737 24.5174C34.6005 24.9035 33.8273 25.6757 33.2474 26.4479C32.2809 26.6409 31.5077 26.834 30.5412 27.2201C30.3479 27.2201 30.3479 27.4131 30.5412 27.4131C31.5077 27.7992 32.2809 27.7992 32.8608 27.9923ZM100.515 15.0579C101.289 15.8301 103.222 17.1815 104.381 17.5676L100.902 18.1467C101.289 16.7954 99.9355 16.2162 100.515 15.0579ZM100.902 3.28185C101.095 3.28185 101.482 3.28185 101.482 3.4749C101.482 3.4749 101.482 3.66795 101.482 3.861C101.289 3.861 100.902 3.861 100.902 3.66795C100.709 3.4749 100.709 3.28185 100.902 3.28185ZM100.902 4.05405C100.902 4.2471 101.095 4.6332 101.289 4.82625C101.289 5.01931 100.709 5.59846 99.9355 6.17761C99.7422 5.21236 99.549 4.6332 99.549 4.44015C99.549 4.2471 100.515 4.05405 100.902 4.05405ZM97.616 0.965251C97.8093 0.965251 98.0026 0.965251 98.0026 0.965251C98.0026 0.965251 98.0026 1.1583 98.0026 1.35135L97.616 1.5444C97.616 1.5444 97.2294 1.35135 97.2294 1.1583C97.4227 1.1583 97.4227 0.965251 97.616 0.965251ZM98.0026 7.72201C97.616 6.94981 97.2294 5.98456 97.4227 4.82625C97.8093 4.82625 98.3892 5.01931 99.1624 4.82625C99.1624 4.82625 99.3557 5.59846 99.549 6.75676C98.9691 6.94981 98.3892 7.33591 98.0026 7.72201ZM92.7835 22.0077C91.6237 21.4286 92.3969 21.8147 92.5902 21.6216C94.5232 22.5869 95.4897 22.3938 97.0361 22.2008C97.2294 22.3938 97.616 22.7799 97.616 23.166C95.683 23.5521 94.3299 22.973 92.7835 22.0077ZM99.7422 31.6602C99.549 30.695 99.549 30.1158 99.1624 29.5367C98.7757 28.5714 97.8093 25.8687 97.0361 23.5521C97.4227 23.166 97.8093 23.3591 98.0026 24.5174C98.1959 25.4826 98.5825 26.2548 98.7757 27.027C99.1623 27.7992 99.3557 28.9575 99.549 29.5367C99.549 29.5367 99.7422 29.5367 99.9355 29.9228C100.515 31.6602 100.709 32.0463 100.709 32.8185C100.902 33.3977 101.869 33.0116 101.675 33.7838H99.7422H100.515C100.322 33.0116 100.709 32.2394 99.7422 31.6602ZM61.469 33.2046C60.8892 33.5907 60.3093 33.7838 59.5361 33.9768L59.3428 33.7838L59.1495 31.2741C59.1495 31.2741 59.3428 31.2741 59.5361 31.0811C59.5361 31.0811 59.5361 31.0811 59.7294 31.0811L61.2758 33.0116C61.4691 33.0116 61.469 33.2046 61.469 33.2046ZM58.9562 33.9768C58.3763 33.9768 57.6031 33.7838 57.2165 33.3977C57.2165 33.3977 57.2165 33.2046 57.2165 33.0116L58.5696 30.888H58.7629L58.9562 33.3977C59.1495 33.7838 59.1495 33.9768 58.9562 33.9768ZM55.6701 28.9575L55.4768 28.7645C55.6701 28.3784 55.6701 28.1853 56.0567 27.7992C56.4433 27.7992 56.6366 27.6062 57.0232 27.6062L57.9897 28.9575C57.2165 28.9575 56.6366 29.1506 56.0567 29.1506L55.6701 28.9575ZM58.5696 26.0618L58.7629 26.2548V26.4479C58.183 26.6409 57.4098 26.6409 56.8299 26.834V26.6409C57.4098 26.4479 57.9897 26.2548 58.5696 26.0618ZM58.3763 28.7645L57.2165 27.4131C57.7964 27.2201 58.3763 27.2201 58.7629 27.027V28.5714C58.7629 28.7645 58.5696 28.7645 58.3763 28.7645ZM58.183 29.1506C58.183 29.3436 57.9897 29.3436 57.9897 29.3436C57.9897 29.3436 57.9897 29.3436 57.7964 29.3436L57.0232 29.1506C57.6031 29.3436 57.7964 29.3436 58.183 29.1506ZM59.1495 28.5714V27.027C59.7294 26.834 60.5026 26.834 61.0825 26.6409V26.834L60.116 28.3784C59.7294 28.3784 59.5361 28.5714 59.1495 28.5714ZM61.2758 27.027L61.469 26.834C61.6623 27.027 62.0489 27.2201 62.2422 27.6062C61.6623 27.7992 61.0824 27.9923 60.5026 28.1853L61.2758 27.027ZM59.1495 26.4479C59.1495 26.2548 59.1495 26.0618 59.3428 26.0618C59.7294 26.0618 60.116 26.0618 60.5026 26.2548C59.9227 26.4479 59.5361 26.4479 59.1495 26.4479ZM53.3505 28.7645C53.1572 28.5714 53.1572 28.7645 53.3505 28.7645C53.7371 28.3784 54.317 28.1853 54.7036 27.9923C54.5103 28.1853 54.5103 28.5714 54.317 28.9575C54.1237 28.9575 53.7371 28.9575 53.3505 28.7645ZM55.2835 29.3436C55.6701 29.3436 55.8634 29.3436 56.25 29.3436L57.9897 29.7297C57.9897 29.7297 57.9897 29.9228 57.9897 30.1158L55.6701 31.0811C55.6701 31.0811 55.4768 31.0811 55.2835 31.0811C55.0902 30.695 55.0902 30.3089 55.0902 29.9228C55.0902 29.9228 55.0902 29.5367 55.2835 29.3436ZM55.4768 31.8533L55.6701 31.6602L57.9897 30.695L58.183 30.888C58.183 30.888 58.183 30.888 58.183 31.0811L56.8299 33.2046L56.6366 33.3977C56.25 32.8185 55.8634 32.4324 55.4768 31.8533ZM61.8556 32.8185C61.8556 32.8185 61.6623 32.8185 61.6623 32.6255L60.116 30.695C60.116 30.695 60.116 30.5019 60.3093 30.5019C60.3093 30.5019 60.3093 30.5019 60.5026 30.5019L62.8221 31.0811L63.0154 31.2741C62.6288 31.8533 62.4355 32.4324 61.8556 32.8185ZM63.0154 30.888C63.0154 30.888 62.8221 30.888 62.6288 30.888L60.3093 30.3089V30.1158C60.3093 30.1158 60.3093 30.1158 60.3093 29.9228L62.6288 28.9575C62.6288 28.9575 62.8221 28.9575 63.0154 28.9575C63.2087 29.3436 63.2087 29.7297 63.2087 30.1158C63.0154 30.3089 63.0154 30.5019 63.0154 30.888ZM62.6288 28.3784L60.116 29.5367L59.9227 29.3436C59.9227 29.3436 59.9227 29.3436 59.9227 29.1506L60.116 28.7645C60.8892 28.5714 61.6623 28.3784 62.4355 27.9923C62.6288 28.1853 62.6288 28.1853 62.6288 28.3784ZM69.0077 24.9035C68.0412 25.6757 68.4278 26.6409 67.8479 26.834C67.6546 26.834 66.3015 27.027 66.1082 27.2201C65.7216 26.834 65.1417 26.4479 64.5618 26.2548C65.7216 25.4826 67.8479 25.0965 69.0077 24.9035ZM64.7551 26.834C64.5618 27.027 63.9819 27.2201 63.0154 27.4131C62.8221 27.027 62.6288 26.834 62.2422 26.6409C63.402 26.4479 64.1752 26.6409 64.7551 26.834ZM76.1598 13.3205C74.6134 15.0579 74.8067 17.3745 75 19.305C74.6134 19.4981 74.2268 19.8842 73.8402 19.8842C73.6469 17.5676 74.0335 14.0927 76.1598 13.3205ZM36.1469 14.0927C35.9536 13.7066 35.567 13.1274 35.7603 12.7413C35.9536 12.5483 36.5335 12.7413 36.7268 12.7413C36.9201 12.9344 38.6598 13.8996 39.2397 13.8996C42.9123 14.8649 47.5515 13.5135 50.2577 16.0232C50.451 16.2162 50.451 16.2162 50.451 16.4093C46.1984 13.8996 39.8196 18.1467 36.1469 14.0927ZM39.433 18.9189C39.8196 19.112 39.8196 19.4981 40.2062 19.8842C40.7861 20.8494 41.7526 21.0425 42.3324 21.8147C42.1392 21.8147 41.9459 21.8147 41.7526 21.8147C41.366 21.8147 41.1727 21.6216 40.9794 21.4286C40.7861 21.2355 40.3995 21.0425 40.2062 21.2355C40.0129 21.2355 39.2397 21.2355 38.8531 21.0425C38.8531 20.4633 39.6263 19.6911 39.433 18.9189ZM35.1804 26.6409L36.3402 27.7992C35.567 27.7992 34.7938 27.7992 34.0206 27.7992V27.6062C34.2139 27.2201 34.4072 27.027 34.6005 26.834C34.7938 26.6409 34.9871 26.6409 35.1804 26.6409ZM41.7526 26.834C41.9459 27.027 41.9459 27.2201 42.1392 27.4131C41.5593 27.4131 40.9794 27.6062 40.3995 27.6062L41.1727 26.834C41.5593 26.834 41.7526 26.834 41.7526 26.834ZM40.9794 26.6409L39.8196 27.6062C39.433 27.6062 39.2397 27.6062 38.8531 27.6062L39.433 26.2548C40.0129 26.2548 40.5928 26.2548 40.9794 26.6409C41.1727 26.6409 41.1727 26.6409 40.9794 26.6409ZM40.7861 33.0116C40.3995 33.3977 39.8196 33.5907 39.2397 33.7838C39.2397 33.7838 39.0464 33.5907 38.8531 33.3977L38.4665 30.888C38.4665 30.888 38.6598 30.888 38.6598 30.695L40.3995 32.6255C40.7861 32.8185 40.7861 33.0116 40.7861 33.0116ZM36.9201 28.5714C36.9201 28.7645 36.9201 28.7645 36.7268 28.7645L34.7938 27.9923C35.3737 27.9923 35.9536 27.9923 36.5335 27.9923C36.7268 28.1853 36.9201 28.5714 36.9201 28.5714ZM38.8531 28.3784L38.6598 28.1853V27.9923H39.433L38.8531 28.3784C39.0464 28.3784 39.0464 28.3784 38.8531 28.3784ZM38.4665 27.7992C38.2732 27.7992 38.0799 27.7992 37.8866 27.7992L37.6933 26.2548H37.8866C38.2732 26.2548 38.6598 26.2548 38.8531 26.2548L38.4665 27.7992ZM37.3067 26.4479L37.5 27.7992C37.3067 27.7992 36.9201 27.7992 36.7268 27.7992L35.567 26.4479C36.1469 26.4479 36.7268 26.4479 37.3067 26.4479ZM37.6933 28.1853C37.5 28.1853 37.5 28.3784 37.5 28.3784L37.3067 28.1853C37.3067 28.1853 37.5 28.1853 37.6933 28.1853ZM33.634 28.3784C33.634 28.3784 33.8273 28.1853 34.2139 28.1853L36.7268 29.1506V29.3436L34.2139 29.7297C34.0206 29.7297 33.8273 29.7297 33.8273 29.5367C33.8273 29.3436 33.8273 29.3436 33.8273 29.1506C33.4407 29.1506 33.634 28.7645 33.634 28.3784ZM33.634 30.695C33.634 30.5019 33.8273 30.3089 34.0206 30.3089L36.5335 29.9228V30.1158L34.7938 31.8533C34.6005 32.0463 34.4072 32.0463 34.2139 31.8533C34.0206 31.4672 33.8273 31.0811 33.634 30.695ZM34.7938 32.6255C34.7938 32.6255 34.7938 32.2394 34.9871 32.0463L37.1134 30.5019L37.3067 30.695L36.3402 33.2046C36.3402 33.3977 35.9536 33.5907 35.9536 33.5907C35.567 33.2046 35.1804 33.0116 34.7938 32.6255ZM36.9201 33.7838C36.9201 33.7838 36.7268 33.5907 36.7268 33.2046L37.6933 30.695H37.8866L38.4665 33.2046C38.4665 33.3977 38.4665 33.5907 38.2732 33.5907C38.0799 33.5907 38.0799 33.5907 37.8866 33.5907C37.6933 33.9768 37.3067 33.9768 36.9201 33.7838ZM41.366 32.4324C41.366 32.4324 40.9794 32.4324 40.7861 32.2394L39.0464 30.3089C39.0464 30.3089 39.0464 30.1158 39.2397 30.1158L41.7526 31.0811C41.9459 31.2741 42.1392 31.4672 42.1392 31.4672C41.9459 31.8533 41.7526 32.2394 41.366 32.4324ZM42.1392 31.2741C42.1392 31.2741 42.1392 31.0811 42.3324 31.0811L42.1392 31.2741ZM42.5258 30.5019C42.5258 30.5019 42.3325 30.695 41.9459 30.695L39.433 29.7297V29.5367L42.1392 29.1506C42.3324 29.1506 42.5258 29.1506 42.5258 29.3436V29.5367C42.5258 29.7297 42.5258 30.1158 42.5258 30.5019ZM42.5258 28.3784C42.5258 28.5714 42.3324 28.7645 42.1392 28.7645L39.433 29.1506C39.433 29.1506 39.433 28.9575 39.2397 28.9575L40.0129 28.3784C40.7861 28.3784 41.5593 28.1853 42.3324 28.1853C42.3324 27.9923 42.3325 28.1853 42.5258 28.3784ZM43.8788 27.027C44.0721 27.027 44.0721 27.2201 43.8788 27.2201C43.6855 27.2201 43.2989 27.4131 43.1056 27.4131C42.9123 27.2201 42.9123 27.027 42.719 26.834C43.1056 26.834 43.4922 26.834 43.8788 27.027ZM39.433 26.0618L39.6263 25.6757C39.6263 25.4826 40.0129 25.2896 40.0129 25.2896C40.3995 25.4826 40.7861 25.6757 41.1727 26.0618C40.5928 26.0618 40.0129 26.0618 39.433 26.0618ZM39.2397 25.0965C39.2397 25.0965 39.433 25.4826 39.433 25.6757L39.2397 26.0618C38.8531 26.0618 38.4665 26.0618 38.0799 26.0618C37.8866 26.0618 37.8866 26.0618 37.6933 26.0618L37.5 25.4826C37.5 25.2896 37.5 25.0965 37.6933 25.0965C37.8866 25.0965 37.8866 25.0965 38.0799 25.0965C38.4665 24.9035 38.8531 24.9035 39.2397 25.0965ZM36.7268 25.0965C36.9201 25.0965 36.9201 25.2896 37.1134 25.4826V25.8687C36.9201 25.6757 36.7268 25.4826 36.7268 25.0965ZM36.7268 26.0618C36.3402 26.0618 35.9536 26.0618 35.3737 26.2548C35.3737 26.0618 35.3737 25.8687 35.3737 25.8687C35.567 25.6757 35.7603 25.6757 35.9536 25.4826C36.1469 25.6757 36.3402 25.8687 36.7268 26.0618ZM32.0876 27.2201C32.4742 27.027 32.8608 27.027 33.2474 26.834C33.0541 27.027 33.0541 27.2201 32.8608 27.6062C32.4742 27.6062 32.2809 27.6062 31.8943 27.4131C31.8943 27.4131 31.8943 27.4131 32.0876 27.2201ZM111.92 14.4788C112.113 14.6718 112.113 14.6718 112.307 14.8649C112.307 14.8649 112.307 14.8649 112.307 14.6718C112.307 14.4788 112.113 14.2857 111.92 14.4788Z" fill="white"/>
+<path d="M108.634 33.7836H104.381C104.381 33.9767 104.575 34.3627 104.768 34.5558H109.407L110.76 33.9767C110.954 33.3975 110.567 32.8183 110.567 32.4322C110.567 31.0809 109.794 29.7295 109.407 28.3782C109.6 28.1851 109.987 27.4129 110.374 27.606C111.34 29.1504 111.533 31.0809 111.34 33.2045C111.147 33.7836 110.374 34.1697 110.374 34.5558C110.374 34.7488 111.533 34.5558 111.92 34.1697C111.92 33.7836 112.5 33.3975 112.693 33.3975C112.887 32.8183 112.5 32.8183 112.693 32.4322C112.887 32.2392 112.693 29.5365 112.5 29.1504C112.5 29.1504 112.5 29.1504 112.307 29.1504C112.113 28.5712 112.693 27.799 112.887 27.2199L114.433 27.0268C114.24 25.6755 113.853 24.3241 113.466 22.9728C113.66 22.5867 114.046 22.3936 114.24 22.2006C115.786 21.2353 114.433 19.4979 114.433 18.1465C114.24 17.5674 113.273 16.9882 113.08 16.216C113.273 16.4091 113.466 16.216 113.466 16.4091C113.853 16.023 113.853 15.6369 113.66 15.0577C114.433 14.2855 114.82 13.8994 114.82 13.7064C114.82 12.9342 113.66 11.9689 113.08 11.9689C112.693 12.162 112.5 12.5481 111.727 13.1272C111.727 13.1272 110.954 12.9342 110.567 13.1272C110.374 13.3203 110.374 13.8994 110.76 14.2855C110.76 14.4786 110.567 14.4786 110.567 14.6716C110.567 14.8647 110.567 14.8647 110.567 14.8647C110.76 15.0577 110.76 15.2508 110.567 15.4438C110.374 15.8299 110.76 16.023 110.954 16.023C110.954 16.023 110.954 16.023 111.147 16.216C111.147 16.6021 109.987 17.1813 109.987 17.5674C109.794 18.3396 109.407 18.3396 108.827 21.2353C108.827 22.0075 108.827 22.5867 108.827 22.9728C108.247 24.7102 107.668 25.6755 107.281 26.8338C106.894 27.799 109.021 30.6948 109.021 32.6253C109.021 33.5905 108.634 33.5905 108.634 33.7836ZM111.92 30.6948C111.727 30.5017 111.727 30.1156 111.727 29.7295C111.92 29.5365 112.307 29.7295 112.307 29.7295C112.693 30.6948 112.693 30.8878 111.92 30.6948ZM111.92 16.9882L112.113 16.7952C112.693 16.4091 112.307 16.6021 111.727 16.4091C111.533 16.216 111.533 16.023 111.533 15.8299C111.533 15.4438 111.34 15.4438 111.34 15.2508C111.34 15.2508 111.34 15.0577 111.533 14.8647C111.727 14.6716 111.727 14.0925 111.92 14.0925C113.08 14.0925 112.693 14.6716 112.887 14.6716C112.887 14.8647 113.466 15.4438 113.66 15.6369C113.66 16.216 113.08 15.8299 113.273 16.6021C113.273 17.7604 111.92 17.5674 111.34 18.5326C110.954 17.3743 111.92 17.3743 111.92 16.9882ZM110.76 21.8145C111.147 22.0075 111.34 22.3936 111.533 22.3936C111.727 22.7797 111.147 22.7797 110.954 22.9728C110.567 22.9728 110.374 22.5867 110.18 22.7797H109.794C109.987 22.5867 110.374 22.0075 110.76 21.8145ZM108.054 27.606C107.861 26.8338 109.021 25.6755 109.601 23.1658C109.794 22.9728 109.987 23.745 110.374 23.5519C110.954 23.5519 110.76 25.2894 111.34 24.1311C111.34 23.745 111.34 23.1658 111.727 22.9728C112.113 22.9728 112.307 23.1658 112.5 23.3589L111.92 24.3241C113.08 24.3241 111.533 26.2546 113.08 25.8685C113.08 26.6407 112.693 28.5712 112.307 28.3782C112.113 27.2199 111.92 27.799 111.92 27.9921C111.92 28.3782 111.92 28.7643 112.113 29.1504C112.113 29.1504 111.727 29.1504 111.727 29.3434C110.954 28.1851 110.954 26.4477 110.374 25.0963L110.18 25.2894C110.18 26.0616 109.794 27.2199 109.214 27.606C108.827 27.799 110.18 27.606 109.021 28.1851C109.407 28.3782 109.021 28.7643 108.634 28.7643C108.441 28.3782 108.247 27.9921 108.054 27.606ZM109.214 30.3087C109.021 30.1156 108.827 29.5365 108.634 29.3434L109.214 29.1504C109.407 29.3434 109.601 29.7295 109.601 30.1156C109.601 30.1156 109.407 30.3087 109.214 30.3087ZM88.9175 17.3743C88.9175 16.023 89.3041 15.0577 88.7242 13.7064C88.7242 13.1272 89.1108 12.7411 89.1108 12.162L88.1443 12.355C87.951 13.5133 87.7577 13.7064 87.951 14.8647C88.1443 16.023 88.3376 16.9882 88.9175 17.3743ZM78.866 21.0423C82.5386 20.077 85.2448 19.1118 88.1443 17.7604C86.7912 15.0577 87.1778 14.2855 87.1778 12.5481C87.1778 12.5481 85.6314 12.5481 83.6984 12.162C81.7654 13.3203 79.2526 18.3396 78.866 21.0423ZM91.6237 21.8145C91.4304 21.6214 91.817 21.8145 91.6237 21.8145V21.8145ZM96.0696 13.5133C94.5232 12.355 93.3634 9.84538 91.6237 10.0384C91.4304 8.10792 90.6572 5.01912 93.1701 1.73727C93.5567 1.54422 94.1366 1.54422 94.3299 1.35117C93.3634 1.15812 91.817 1.93032 90.8505 1.35117C90.8505 1.35117 91.2371 2.12337 91.817 2.31642C91.6237 2.70252 90.8505 3.08862 91.2371 3.86082C90.4639 4.43997 90.6572 5.21217 91.0438 5.59827C90.6572 5.98437 90.2706 6.75657 90.8505 7.33572C90.0773 8.10792 91.0438 8.68708 91.2371 8.88013C90.8505 9.65233 91.2371 10.2315 91.2371 10.2315C91.2371 10.8106 90.2706 11.5828 89.884 11.7759C89.4974 13.1272 89.6907 15.6369 89.6907 17.1813C92.0103 16.023 94.3299 15.0577 96.0696 13.5133ZM69.3943 57.9149C69.3943 56.5635 68.4278 55.0191 67.268 54.2469C66.8814 54.0539 66.6881 54.0539 66.3015 53.8608C66.6881 53.8608 67.0747 53.8608 67.4613 53.6678C68.6211 53.0886 70.1675 51.5442 70.1675 48.8415C70.1675 46.911 69.3943 45.1736 67.8479 44.2083C66.4948 43.2431 64.9484 43.05 63.2087 43.05H50.6443V46.3319H53.5438V62.5481H50.6443V65.8299H59.7294V62.5481H56.8299V55.4052H63.0154C65.1417 55.4052 65.9149 56.7566 66.1082 58.1079L66.3015 65.8299H72.4871V62.5481H69.5876L69.3943 57.9149ZM63.5953 52.3164H56.6366V46.3319H63.2087C63.7886 46.3319 64.7551 46.3319 65.335 46.718C66.1082 47.1041 66.8814 48.0693 66.8814 49.4207C67.0747 51.1581 65.5283 52.3164 63.5953 52.3164ZM49.4845 73.745H45.2319V86.6794H47.1649V81.0809H49.2912C52.384 81.0809 53.7371 79.5365 53.7371 77.4129C53.7371 75.4824 52.384 73.745 49.4845 73.745ZM49.4845 79.5365H47.1649V75.4824H49.4845C51.2242 75.4824 51.8041 76.4477 51.8041 77.4129C51.8041 78.7643 50.8376 79.5365 49.4845 79.5365ZM61.0825 73.745L55.2835 86.6794H57.4098L58.9562 82.8184H64.5618L66.1082 86.6794H68.2345L62.2422 73.745H61.0825ZM59.7294 81.2739L61.6623 76.2546L63.7886 81.2739H59.7294ZM88.1443 73.745H90.0773V86.6794H88.1443V73.745ZM98.0026 76.8338C98.0026 75.8685 98.9691 75.2894 100.322 75.2894C101.289 75.2894 102.448 75.6755 103.608 76.6407V74.5172C102.642 73.938 101.482 73.5519 100.515 73.5519C98.0026 73.5519 96.2629 74.9033 96.2629 77.0268C96.2629 80.5018 102.448 80.8878 102.448 83.5906C102.448 84.3628 101.675 85.1349 100.129 85.1349C98.7758 85.1349 97.4227 84.5558 96.4562 83.2045V85.521C97.616 86.2933 98.7758 86.6794 100.322 86.6794C102.642 86.6794 104.188 85.1349 104.188 83.2045C103.995 79.3434 98.0026 79.3434 98.0026 76.8338ZM81.3788 84.1697C80.4123 82.6253 79.6392 81.2739 78.2861 80.5018C79.8325 79.9226 80.6056 78.7643 80.6056 77.4129C80.6056 75.0963 78.866 73.745 76.1598 73.745H72.6804V86.6794H74.6134V81.0809H75.3866C76.3531 81.0809 77.1263 81.467 79.0593 83.9767L80.7989 86.6794H83.1185L82.152 85.1349C81.7654 84.9419 81.5721 84.5558 81.3788 84.1697ZM75.7732 79.3434H74.6134V75.2894H75.7732C77.7062 75.2894 78.4794 76.0616 78.4794 77.2199C78.4794 78.3782 77.8995 79.3434 75.7732 79.3434Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_812_603">
+<rect width="150" height="86.8726" fill="white"/>
+</clipPath>
+<clipPath id="clip1_812_603">
+<rect width="150" height="86.8726" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</div>
+                    <div><svg width="174" height="61" viewBox="0 0 174 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_812_600)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M173.956 0L46.729 54.0935C36.1367 58.6312 27.2106 60.9 20.0697 60.9C11.9766 60.9 6.14489 58.0341 2.45543 52.3024C-2.18616 44.8988 -0.162904 33.0771 7.81111 20.5388C12.5717 13.2547 18.6415 6.56765 24.5922 0.119412C23.164 2.38824 10.9055 22.9271 24.3542 32.5994C26.9725 34.51 30.781 35.4653 35.4226 35.4653C39.1121 35.4653 43.3966 34.8682 48.1572 33.6741L173.956 0Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_812_600">
+<rect width="173.956" height="60.9" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</div>
+                    <div><svg width="150" height="42" viewBox="0 0 150 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_812_616)">
+<g clip-path="url(#clip1_812_616)">
+<path d="M93.7083 17.75C110.917 10.875 121.625 6.91667 150 0C134.583 1 100.5 3.375 77 7.95833L93.7083 17.75Z" fill="white"/>
+<path d="M40.2083 40.5833H62.7083C67.1666 33.8333 71.5833 30.5417 76.7499 26.875C72.8333 25.375 68.9166 23.9167 64.9166 22.5C50.5416 28.8333 42.5833 37.3333 40.2083 40.5833Z" fill="white"/>
+<path d="M44.6251 16.042C24.5834 23.2087 13.4167 30.9587 5.91675 40.5837H30.7501C33.1667 37.2087 42.3751 27.5003 59.7084 20.7503C54.9167 19.1253 46.6251 16.542 44.6251 16.042Z" fill="white"/>
+<path d="M54.9583 0.916992H0C55.375 10.917 82.0833 23.792 125 42.0003C121.333 39.2503 62.1667 4.41699 54.9583 0.916992Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_812_616">
+<rect width="150" height="42" fill="white"/>
+</clipPath>
+<clipPath id="clip1_812_616">
+<rect width="150" height="42" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</div>
+                   <div><svg width="150" height="35" viewBox="0 0 150 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_812_613)">
+<g clip-path="url(#clip1_812_613)">
+<path d="M74.654 21.39C74.654 17.4033 77.8831 14.1833 81.8811 14.1833C85.879 14.1833 89.1081 17.4033 89.1081 21.39C89.1081 25.3767 85.879 28.5967 81.8811 28.5967C77.8831 28.5967 74.654 25.4533 74.654 21.39ZM104.177 21.39C104.177 17.4033 107.406 14.1833 111.404 14.1833C115.402 14.1833 118.631 17.4033 118.631 21.39C118.631 25.3767 115.402 28.5967 111.404 28.5967C107.406 28.6733 104.177 25.4533 104.177 21.39ZM35.674 21.39C35.674 17.4033 38.9031 14.1833 42.9011 14.1833C46.899 14.1833 50.1281 17.4033 50.1281 21.39C50.1281 25.3767 46.899 28.5967 42.9011 28.5967C38.9031 28.6733 35.674 25.4533 35.674 21.39ZM6.15069 21.39C6.15069 17.4033 9.3798 14.1833 13.3778 14.1833C17.3757 14.1833 20.6048 17.4033 20.6048 21.39C20.6048 25.3767 17.3757 28.5967 13.3778 28.5967C9.3798 28.6733 6.15069 25.4533 6.15069 21.39ZM65.8893 8.58667H59.5848V33.8867H65.8893V8.58667ZM20.6048 33.9633H26.9093V8.66333H20.6048V10.7333C18.4521 9.27667 15.9149 8.43333 13.0702 8.43333C5.84316 8.35667 0 14.1833 0 21.39C0 28.6733 5.84316 34.5 13.1471 34.5C15.9149 34.5 18.529 33.6567 20.6817 32.2V33.9633H20.6048ZM118.631 33.9633H124.936V8.66333H118.631V10.7333C116.479 9.27667 113.942 8.43333 111.097 8.43333C103.87 8.43333 97.9498 14.26 97.9498 21.5433C97.9498 28.8267 103.793 34.6533 111.097 34.6533C113.865 34.6533 116.479 33.81 118.631 32.3533V33.9633ZM127.242 25.76C127.473 30.8967 131.779 34.5 139.159 34.5C145.156 34.5 150.077 31.8933 150.077 26.22C150.077 22.2333 147.847 19.9333 142.696 18.9367L138.698 18.17C136.084 17.71 134.316 17.1733 134.316 15.64C134.316 13.9533 136.084 13.1867 138.237 13.1867C141.389 13.1867 142.696 14.7967 142.773 16.6367H149.154C148.77 11.6533 144.849 8.35667 138.391 8.35667C131.779 8.35667 127.858 11.96 127.858 16.7133C127.858 22.4633 132.547 23.3833 136.545 24.15L139.851 24.7633C142.235 25.2233 143.311 25.9133 143.311 27.2933C143.311 28.52 142.081 29.7467 139.313 29.7467C135.161 29.7467 133.854 27.6 133.778 25.76H127.242ZM50.1281 0V10.6567C47.9754 9.2 45.4382 8.35667 42.5935 8.35667C35.3665 8.35667 29.4464 14.1833 29.4464 21.4667C29.5233 28.6733 35.3665 34.5 42.6704 34.5C45.4382 34.5 48.0523 33.6567 50.205 32.2V33.9633H56.5095V0H50.1281ZM89.1081 0V10.6567C86.9554 9.2 84.4182 8.35667 81.5735 8.35667C74.3465 8.35667 68.4264 14.1833 68.4264 21.4667C68.4264 28.75 74.2696 34.5767 81.5735 34.5767C84.3414 34.5767 86.9554 33.7333 89.1081 32.2767V34.04H95.4126V0H89.1081ZM59.5848 0V6.28667H65.8893V0" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_812_613">
+<rect width="150" height="34.5" fill="white"/>
+</clipPath>
+<clipPath id="clip1_812_613">
+<rect width="150" height="34.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</div>
+                    <div><svg width="150" height="50" viewBox="0 0 150 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_812_619)">
+<g clip-path="url(#clip1_812_619)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.66282 1.04976H37.4977C38.3473 1.03526 39.1914 1.18949 39.9812 1.50354C40.771 1.81759 41.491 2.28524 42.0994 2.8795C42.7078 3.47376 43.1928 4.18287 43.5262 4.96588C43.8596 5.7489 44.0349 6.59032 44.042 7.44157V7.91639C44.042 8.77693 43.8727 9.62903 43.5437 10.4239C43.2147 11.2189 42.7325 11.941 42.1247 12.5491C41.5169 13.1571 40.7954 13.6392 40.0014 13.9677C39.2075 14.2962 38.3567 14.4646 37.4977 14.4634H6.66282C4.92253 14.4734 3.24819 13.7971 2.0015 12.5806C0.754818 11.3641 0.0358791 9.70514 0 7.96205L0 7.48723C0.0406564 5.75554 0.76467 4.11056 2.01348 2.91254C3.26229 1.71452 4.93411 1.06112 6.66282 1.09542V1.04976Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.40121e-06 24.6536C6.40121e-06 21.1473 3.27217 18.5723 6.89069 18.5723H34.2347C35.0948 18.5699 35.9468 18.7378 36.7419 19.0664C37.537 19.3951 38.2594 19.8779 38.8676 20.4872C39.4758 21.0965 39.9577 21.8202 40.2857 22.6167C40.6138 23.4132 40.7814 24.2668 40.779 25.1285V25.4754C40.7802 26.3368 40.6117 27.1898 40.2833 27.9858C39.9548 28.7818 39.4728 29.505 38.8649 30.114C38.257 30.7231 37.535 31.206 36.7405 31.535C35.946 31.8641 35.0944 32.0328 34.2347 32.0316H15.6499C15.1915 32.0496 14.7568 32.2401 14.4324 32.5651C14.108 32.8901 13.9179 33.3256 13.8999 33.7848V42.916C13.9011 43.7768 13.7325 44.6295 13.404 45.4249C13.0754 46.2204 12.5933 46.943 11.9852 47.5513C11.3771 48.1596 10.6552 48.6417 9.86067 48.9697C9.06619 49.2978 8.21486 49.4654 7.35554 49.463H6.54433C5.68501 49.4654 4.83368 49.2978 4.0392 48.9697C3.24471 48.6417 2.52272 48.1596 1.91467 47.5513C1.30661 46.943 0.824461 46.2204 0.495891 45.4249C0.167322 44.6295 -0.00119713 43.7768 6.40121e-06 42.916V24.6536Z" fill="#F4F4F5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.244 42.9164L48.1255 6.67488C48.1122 5.80309 48.2722 4.93737 48.596 4.12809C48.9198 3.31882 49.4011 2.58215 50.0118 1.96098C50.6226 1.33981 51.3505 0.84654 52.1533 0.509881C52.9561 0.173221 53.8178 -0.000101715 54.6881 4.47819e-08L55.3899 4.47819e-08C57.1386 0.0240513 58.8072 0.738771 60.0327 1.98873C61.2582 3.2387 61.9416 4.92282 61.9342 6.67488L62.0345 42.9164C62.0345 43.777 61.8652 44.6291 61.5362 45.424C61.2072 46.2189 60.725 46.9411 60.1172 47.5491C59.5093 48.1572 58.7878 48.6393 57.9939 48.9677C57.1999 49.2962 56.3492 49.4647 55.4902 49.4635H54.6881C53.8391 49.4564 53 49.281 52.219 48.9475C51.438 48.6141 50.7306 48.1291 50.1375 47.5205C49.5445 46.912 49.0775 46.1918 48.7634 45.4016C48.4494 44.6115 48.2946 43.7668 48.3078 42.9164H48.244Z" fill="#F4F4F5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M131.424 4.32861L146.008 28.2066C149.28 33.3566 149.982 34.5984 149.982 38.5065C149.982 44.4692 144.513 49.0348 139.7 49.0348H119.976C116.33 49.0348 113.432 46.5785 113.432 42.9534V42.5973C113.431 41.7364 113.599 40.8838 113.928 40.0883C114.256 39.2928 114.739 38.5702 115.347 37.9619C115.955 37.3536 116.677 36.8716 117.471 36.5435C118.266 36.2155 119.117 36.0478 119.976 36.0502H132.163C132.864 36.0502 133.329 35.9315 133.557 35.4567C133.785 34.9819 133.676 34.6441 133.329 34.0597L124.643 20.089C124.534 19.8607 124.415 19.5046 124.178 19.5046C123.941 19.5046 123.713 19.8607 123.595 20.089L110.397 42.8347C108.291 46.4872 105.839 49.0348 102.33 49.0348H76.9824C72.0787 49.0348 67.2844 44.3596 67.2844 39.4379V6.67532C67.2832 5.81401 67.4517 4.96093 67.7801 4.16496C68.1086 3.36898 68.5906 2.64576 69.1985 2.03672C69.8065 1.42769 70.5284 0.94481 71.3229 0.615757C72.1175 0.286705 72.969 0.117945 73.8288 0.119147H74.6491C75.5088 0.117945 76.3604 0.286705 77.1549 0.615757C77.9494 0.94481 78.6714 1.42769 79.2793 2.03672C79.8872 2.64576 80.3692 3.36898 80.6977 4.16496C81.0261 4.96093 81.1946 5.81401 81.1934 6.67532V33.4753C81.1884 33.7069 81.2303 33.9371 81.3165 34.152C81.4027 34.367 81.5314 34.5622 81.6949 34.726C81.8584 34.8898 82.0533 35.0188 82.2679 35.1051C82.4825 35.1915 82.7122 35.2334 82.9434 35.2284H95.5581C97.7821 35.2284 99.0673 34.4066 100.234 32.416L117.169 4.32861C117.903 3.06158 118.962 2.01422 120.236 1.29497C121.51 0.575728 122.953 0.210755 124.415 0.237852C125.844 0.217469 127.252 0.587521 128.487 1.30825C129.722 2.02899 130.737 3.07316 131.424 4.32861Z" fill="#F4F4F5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.66282 1.04976H37.4977C38.3473 1.03526 39.1914 1.18949 39.9812 1.50354C40.771 1.81759 41.491 2.28524 42.0994 2.8795C42.7078 3.47376 43.1928 4.18287 43.5262 4.96588C43.8596 5.7489 44.0349 6.59032 44.042 7.44157V7.91639C44.042 8.77693 43.8727 9.62903 43.5437 10.4239C43.2147 11.2189 42.7325 11.941 42.1247 12.5491C41.5169 13.1571 40.7954 13.6392 40.0014 13.9677C39.2075 14.2962 38.3567 14.4646 37.4977 14.4634H6.66282C4.92253 14.4734 3.24819 13.7971 2.0015 12.5806C0.754818 11.3641 0.0358791 9.70514 0 7.96205L0 7.48723C0.0406564 5.75554 0.76467 4.11056 2.01348 2.91254C3.26229 1.71452 4.93411 1.06112 6.66282 1.09542V1.04976Z" fill="#CDCDCD"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_812_619">
+<rect width="150" height="49.5" fill="white"/>
+</clipPath>
+<clipPath id="clip1_812_619">
+<rect width="150" height="49.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+<div> 
+                     <div><svg width="150" height="27" viewBox="0 0 150 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_812_622)">
+<g clip-path="url(#clip1_812_622)">
+<mask id="mask0_812_622" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="27">
+<path d="M150 0H0V27H150V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_812_622)">
+<path d="M144.39 16.8471V21.9521C143.257 22.7463 142.123 22.803 141.33 22.179C140.48 21.4416 140.253 20.0803 140.876 18.8324L144.39 16.8471ZM148.81 22.2925L148.527 22.2358C148.3 22.179 147.903 21.6685 147.903 20.8177V14.1811C147.903 12.2526 147.28 10.7778 146.203 9.92694C145.183 9.18954 143.767 9.0761 142.123 9.5866C140.196 10.2106 137.25 12.7631 136.796 13.3303L136.683 13.4437L136.74 13.6139C136.796 13.7841 137.023 14.1244 137.136 14.2379L137.25 14.2946H140.48C140.48 14.2946 140.48 13.5005 140.48 13.387C140.48 12.0824 141.33 11.4585 142.066 11.2883C142.803 11.1748 143.313 11.2316 143.653 11.5152C144.163 11.9122 144.39 12.8765 144.39 14.2379V15.0887L137.59 18.095L137.476 18.1517L137.42 18.2652C136.796 20.1937 136.91 21.6118 137.816 22.6328C139.233 24.1643 142.633 24.3912 147.62 23.2568C148.017 23.1433 148.81 23.0866 148.81 23.0866C148.81 23.2568 148.81 22.2925 148.81 22.2925ZM124.159 20.5908C123.366 22.0089 121.666 22.803 120.363 22.4059C119.059 22.0089 118.323 20.6475 118.323 18.4353V12.4227L118.493 12.366C119.286 11.969 120.759 11.1748 122.743 12.1958C123.819 12.7631 124.613 13.7841 125.009 15.032C125.519 16.7904 125.179 18.8324 124.159 20.5908ZM128.126 12.7631C127.106 10.9479 125.803 9.87022 124.216 9.47316C122.006 8.90593 119.739 9.92694 118.379 10.7211V2.04248L117.926 1.75887L113.166 2.72316V3.51727C113.166 3.51727 113.959 4.14122 114.073 4.25467C114.639 4.87862 114.639 5.78618 114.639 6.35341V22.6328V22.8597L114.809 22.9732C117.529 24.3912 121.099 24.5614 123.706 23.4837C126.596 22.2358 127.843 20.1937 128.41 18.719C129.203 16.3933 128.806 14.0677 128.126 12.7631ZM130.79 23.8807V13.7841C130.79 13.2169 130.79 12.3093 130.223 11.6853C130.11 11.5719 129.316 10.9479 129.316 10.9479V10.2106L134.076 9.24627L134.473 9.52988V20.761C134.53 22.0089 134.926 22.6895 135.72 22.8597L135.946 22.9164V23.8807H130.79ZM130.563 4.76517C130.563 2.21265 134.416 2.21265 134.416 4.76517C134.416 7.31769 130.563 7.31769 130.563 4.76517ZM59.048 22.5761C56.1579 22.5761 55.3646 20.3072 55.3646 16.6202C55.3646 13.8975 56.1579 10.6643 59.048 10.6643C61.938 10.6643 62.7314 13.8975 62.7314 16.6202C62.7314 20.3072 61.938 22.5761 59.048 22.5761ZM66.8681 16.6769C66.8681 14.4648 66.1881 12.5929 64.8281 11.2883C63.4114 9.87022 61.428 9.13282 59.048 9.13282C54.5712 9.13282 51.2278 12.366 51.2278 16.6769C51.2278 21.2715 54.2879 24.2211 59.048 24.2211C61.3147 24.2211 63.2981 23.4837 64.7148 22.0089C66.0748 20.6475 66.8681 18.719 66.8681 16.6769ZM113.053 22.803C112.259 22.6328 111.806 21.8954 111.806 20.7042V13.8975C111.806 12.3093 111.012 9.35971 107.896 9.35971C105.572 9.35971 104.042 10.7211 103.306 11.4585C102.796 10.3807 101.832 9.35971 99.9622 9.35971C98.4888 9.35971 97.1288 9.92694 95.8821 11.0047V9.5866L95.4855 9.30299L90.7253 10.2673V11.0614C90.7253 11.0614 91.5187 11.6853 91.632 11.7988C92.2554 12.4227 92.2554 13.387 92.2554 13.9542V23.9374H97.4122V22.9732L97.1288 22.9164C96.3355 22.7463 95.8821 22.0089 95.8821 20.8177V12.7631C96.7888 11.969 97.6955 11.8555 98.6589 11.9122C99.4522 11.969 100.246 12.5362 100.246 15.3723V23.8807H105.402V22.9164L105.176 22.8597C104.326 22.6895 103.929 21.9521 103.929 20.761V13.9542C103.929 13.7841 103.872 13.2169 103.816 12.8198C104.722 12.0257 105.629 11.8555 106.649 11.969C107.442 12.0257 108.236 12.5929 108.236 15.429V23.9374H113.393V22.9732L113.053 22.803ZM89.5353 22.803C88.6853 22.5761 88.2319 21.8954 88.2319 20.7042V9.52988L87.8353 9.24627L83.0752 10.2106V11.0047C83.0752 11.0047 83.8685 11.6286 83.9819 11.7421C84.6052 12.366 84.6052 13.3303 84.6052 13.8975V20.5341C83.0752 21.7253 81.6018 22.1223 80.6385 21.6685C79.8451 21.2715 79.3918 20.3639 79.3918 19.0593V9.5866L78.9384 9.30299L74.1783 10.2673V11.0614C74.1783 11.0614 74.9717 11.6853 75.085 11.7988C75.7083 12.4227 75.7083 13.387 75.7083 13.9542V19.6265C75.765 20.7042 75.8217 21.1013 75.935 21.5551C76.2184 22.7463 76.955 23.6538 77.9751 23.9942C79.6751 24.6181 82.0552 23.9942 84.6052 22.3492V23.8807H89.8187V22.9164L89.5353 22.803ZM68.5682 23.9942V6.41013C68.5682 5.84291 68.5682 4.87862 67.9448 4.25467C67.6615 4.02778 67.3782 3.74416 67.0381 3.51727V2.77988L71.7982 1.81559L72.2516 2.09921C72.2516 2.09921 72.2516 20.7042 72.2516 20.9879C72.3083 22.803 73.555 22.9164 73.555 22.9164V24.0509L68.5682 23.9942ZM49.7544 18.6055C49.8678 18.7757 50.4344 19.6265 50.4344 19.6265C50.0944 20.9311 49.3011 22.6895 49.3011 22.6895H49.1878C46.071 23.9374 41.3109 24.9585 36.1541 22.8597C33.0941 21.6118 30.884 19.1727 29.9773 16.053C29.0706 12.7631 29.694 9.24627 31.6774 6.52358C33.8874 3.51727 37.4575 1.87232 42.3309 1.5887C44.1443 1.47526 47.9411 1.98576 49.9811 3.17694L50.1511 3.29038C50.1511 3.29038 50.2078 8.39543 50.1511 8.62232L50.0944 8.84921L48.5644 8.90593L48.5077 8.45215C48.2244 6.97736 47.601 3.00677 42.0476 3.29038C39.6675 3.40383 37.7975 4.59501 36.3241 6.46685C34.6241 8.73576 34.0574 11.9122 34.8508 15.3723C35.5874 18.719 38.1375 20.8744 40.1209 21.6685C40.9709 22.0089 43.5776 22.5761 45.561 21.6685C47.3177 20.8744 48.9611 19.5698 49.7544 18.6055ZM19.2671 22.2925C20.0038 21.5551 20.0038 20.3639 19.2671 19.6832L18.7004 19.0593C17.9637 18.3219 16.7737 18.3219 16.0937 19.0593L11.9003 23.2568C11.1636 23.9942 11.1636 25.1853 11.9003 25.866L12.5236 26.49C13.2603 27.2274 14.4503 27.2274 15.1303 26.49L19.2671 22.2925ZM15.527 18.4921C16.2637 17.7547 16.2637 16.5635 15.527 15.8828L14.9037 15.2589C14.167 14.5215 13.0336 14.5215 12.2969 15.2589L8.10351 19.4563C7.36682 20.1937 7.36682 21.3282 8.10351 22.0656L8.72685 22.6895C9.46354 23.4269 10.5969 23.4269 11.3336 22.6895L15.527 18.4921ZM19.2671 7.54459C20.0038 6.80719 20.0038 5.67274 19.2671 4.93534L18.7004 4.31139C17.9637 3.574 16.8304 3.574 16.0937 4.31139L11.8436 8.50887C11.1069 9.24627 11.1069 10.4374 11.8436 11.1181L12.4669 11.7421C13.2036 12.4795 14.3936 12.4795 15.0737 11.7421L19.2671 7.54459ZM15.527 3.80089C16.2637 3.06349 16.2637 1.87232 15.527 1.19164L14.9037 0.567695C14.167 -0.1697 13.0336 -0.1697 12.2969 0.567695L8.10351 4.76517C7.36682 5.50257 7.36682 6.69375 8.10351 7.37442L8.72685 7.99837C9.46354 8.73576 10.5969 8.73576 11.3336 7.99837L15.527 3.80089ZM22.4972 7.94164C21.7605 7.20425 20.6271 7.20425 19.8904 7.94164L19.2671 8.56559C18.5304 9.30299 18.5304 10.4374 19.2671 11.1748L23.4605 15.3723C24.1972 16.1097 25.3872 16.1097 26.0672 15.3723L26.6906 14.7484C27.4273 14.011 27.4273 12.8765 26.6906 12.1391L22.4972 7.94164ZM18.7004 11.6853C17.9637 10.9479 16.8304 10.9479 16.0937 11.6853L15.4703 12.3093C14.7337 13.0467 14.7337 14.2379 15.4703 14.9185L19.6638 19.116C20.4004 19.8534 21.5905 19.8534 22.2705 19.116L22.8938 18.4921C23.6305 17.7547 23.6305 16.5635 22.8938 15.8828L18.7004 11.6853ZM7.53683 7.99837C6.80014 7.26097 5.66679 7.26097 4.9301 7.99837L4.30676 8.62232C3.57007 9.35971 3.57007 10.5509 4.30676 11.2316L8.50018 15.429C9.23687 16.1664 10.4269 16.1664 11.1069 15.429L11.7303 14.8051C12.4669 14.0677 12.4669 12.8765 11.7303 12.1958L7.53683 7.99837ZM7.9335 15.9963C8.67019 16.7337 8.67019 17.8681 7.9335 18.6055L7.36682 19.2295C6.63014 19.9669 5.49678 19.9669 4.7601 19.2295L0.566672 15.032C-0.170011 14.2946 -0.170011 13.1034 0.566672 12.4227L1.13335 11.7988C1.87003 11.0614 3.00339 11.0614 3.74008 11.7988L7.9335 15.9963Z" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_812_622">
+<rect width="150" height="27" fill="white"/>
+</clipPath>
+<clipPath id="clip1_812_622">
+<rect width="150" height="27" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+<div>
+</div>
+</section>
+</main>      
+<!-- footer -->
+   
+ <footer class="footer cmn-gap3">
+    <div class="container">
+        
+        <div class="row footer-top">
+            <div class="col30">
+                <a href="#" class="footer-copyright">
+                    ©2025 Fitin.<br>
+                    All rights reserved.
+                </a>
+                <ul class="footer-links">
+                    <li>
+                        <a href="https://www.instagram.com/?hl=en">
+                            Instagram
+                            <img src="images/right-arrow1.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/login.php/">
+                            Facebook
+                            <img src="images/right-arrow1.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            YouTube
+                            <img src="images/right-arrow1.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col70">
+                <div class="footer-right">
+                    <a href="#" class="footer-logo">FitIn.</a>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="workout.html">Workouts</a></li>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    // Regular Expressions
-    const username_regex = /^.{3,14}$/;
-    const email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    const phone_regex = /^[0-9]{10}$/;
+        <div class="footer-line"></div>
 
-    // Username validation
-    if (username === "") {
-        user_msg.innerHTML = "Username is required";
-        isValid = false;
-    } else if (!username_regex.test(username)) {
-        user_msg.innerHTML = "Username must be 3-14 characters";
-        isValid = false;
-    }
+        <div class="row footer-bottom">
+            <div class="col30">
+                <p class="footer-head">
+                    Stay Updated
+                </p>
+                <p class="footer-para">
+                    We write thoughtfully to your inbox. Subscribe to get
+                    things, tips, offers, and more.
+                </p>
+            </div>
+            
+            <div class="col70">
+                <form class="footer-form">
+                    <input
+                        type="email"
+                        placeholder="Email Input..."
+                        class="footer-input"
+                    >
+                    <a class="footer-btn" href="#">
+                        Subscribe
+                    </a>
+                </form>
+            </div>
+        </div>
 
-    // Email validation
-    if (email === "") {
-        email_msg.innerHTML = "Email is required";
-        isValid = false;
-    } else if (!email_regex.test(email)) {
-        email_msg.innerHTML = "Enter a valid email";
-        isValid = false;
-    }
+    </div>
+</footer>
+<!-- slick js -->
+ <!-- j query minified --> 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+       <!-- j query slick slider plugin -->
+        <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script> 
 
-    // Phone validation
-    if (phone === "") {
-        phone_msg.innerHTML = "Phone number is required";
-        isValid = false;
-    } else if (!phone_regex.test(phone)) {
-        phone_msg.innerHTML = "Phone number must contain exactly 10 digits";
-        isValid = false;
-    }
+   <script> 
+//    j query slick predefined content 
+    $(document).ready(function(){
+    $(".slider").slick({
+  slidesToShow: 6,   
+    slidesToScroll: 1, 
+    centerMode: false, 
+    infinite: true,
+    arrows: false, 
+    dots: true, 
+    speed:500,
+    autoplay:true,
+    autospeed:500,
+    responsive: [ 
+       {
+                breakpoint: 1400, // Extra-large desktops
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1200, // Standard desktops/laptops
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 991,  // Tablets
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,  // Mobile phones
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+    ]
+});
+});
+   </script>
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> 
+  <!-- AOS --> 
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+   <script>
+  AOS.init();
+</script>
+    <script src="script.js"></script> 
 
-    // Store data
-    if (isValid) {
-
-        localStorage.setItem("Username", username);
-        localStorage.setItem("Email", email);
-        localStorage.setItem("Phone", phone);
-
-        alert("Data Stored Successfully");
-
-        // Clear inputs
-        document.getElementById("username").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("Phone").value = "";
-    }
-};
-    </script> 
-     
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
 </body>
 </html>
