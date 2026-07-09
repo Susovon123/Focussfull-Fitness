@@ -76,6 +76,11 @@ padding: 0 15px;
     flex: 0 0 60%;
     padding: 0 15px; 
 }
+.col100{
+    max-width: 100%;
+    flex: 0 0 100%; 
+    padding: 0 15px;
+}
 .cmn-gap{
     padding-top: 95px;
 }
@@ -1156,6 +1161,7 @@ color: var(--main-color3);
     width:100%;
     background:#000;
     padding:80px 0;
+    margin: 32px 0;
 }
 
 .footer-top{
@@ -2094,7 +2100,91 @@ z-index: 2;
     line-height:1.7;
 }
 
+/* modal */ 
+.modal-section{
+    background-image: linear-gradient(to top,#000000, #F2FF00 , #000000);
+    width: 100%; 
+    height: 759px;
+    padding: 10px;
+ position: relative;
+ width: 100%; 
+ top: 120px;
+} 
 
+.modal-text{
+    font-family: var(--clashDisplay-r);
+    font-size: 18px; 
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.429); 
+
+} 
+.modal-section-bar{
+    padding-left: 60px;
+} 
+.input-box{
+    position: relative;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 60px;
+    background: rgb(107, 112, 8);
+    border: 1px solid rgb(138, 142, 26);
+    outline: none;
+    color: #fff;
+    padding-left: 55px;
+    font-size: 16px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.modal input{
+    font-family: var(--clashDisplay-r); 
+    font-size: 16px; 
+    font-weight: 400;
+    
+}
+.input-icon{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+} 
+.modal input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    accent-color: var(--main-color2);
+    /* accent-color is a CSS property that changes the highlight color of form elements such as:
+
+✅ Checkbox
+✅ Radio button
+✅ Range slider
+✅ Progress bar */
+} 
+.modal label{
+        background: linear-gradient(
+        to right,
+        rgba(255,255,255,1) 0%,
+        rgba(255, 255, 255, 0.231) 100%
+    );
+
+     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+    margin-left: 4px;
+} 
+.modal .workout-btn{
+    text-align: center;
+    width: 100%;
+}
 @keyframes borderMove{
     0%{
      border-bottom: 2px solid  var(--main-color2);
@@ -2354,6 +2444,23 @@ input[type="search"]{
         width:520px;
         left:-80px;
     }
+        .modal-section{
+        height:auto;
+        padding:20px;
+    }
+
+    .modal-section-bar{
+        padding-left:30px;
+    }
+
+    .modal-text{
+        font-size:16px;
+    }
+
+    .input-box input{
+        height:55px;
+    }
+    
 }
 
 
@@ -2828,6 +2935,18 @@ h1,.h1-title{
         width:470px;
         left:-70px;
     }
+     .modal-section{
+        height:auto;
+    }
+     .modal-section-bar{
+        padding-left:0;
+    }
+
+    .modal img{
+        width:100%;
+        margin-top:40px;
+    }
+
     
 }
 
@@ -3254,6 +3373,12 @@ h3,.h3-title{
         left:-55px;
         top:15px;
     }
+     .input-box input{
+        height:52px;
+    }
+       .modal-section{
+        padding:15px;
+    }
 }
 /* ======================== 
      545px                    
@@ -3506,6 +3631,30 @@ h3,.h3-title{
         height:360px;
         left:-45px;
     }
+    .modal-section{
+        padding:15px 10px;
+    }
+
+    .input-box{
+        margin:8px 0;
+    }
+
+    .input-box input{
+        height:50px;
+        padding-left:45px;
+        font-size:15px;
+    }
+
+    .input-icon{
+        width:20px;
+        height:20px;
+        left:15px;
+    }
+
+    .modal-text{
+        font-size:15px;
+    }
+
 }
 /*==========================
    480px
@@ -3775,6 +3924,23 @@ h3,.h3-title{
 .fitness-journey-box-head{
         font-size: 14px;
     }
+    .modal-section{
+        padding:10px;
+    }
+
+    .modal-text{
+        font-size:14px;
+    }
+
+    .input-box input{
+        height:48px;
+        font-size:14px;
+    }
+
+    .modal label{
+        font-size:14px;
+    }
+
 }
 
 
@@ -3988,6 +4154,30 @@ h3,.h3-title{
     } 
     .fitness-journey-box-head{
         font-size: 14px;
+    } 
+
+    .modal-section{
+        padding:8px;
+    }
+
+    .modal-text{
+        font-size:13px;
+    }
+
+    .input-box input{
+        height:45px;
+        font-size:13px;
+        padding-left:40px;
+    }
+
+    .input-icon{
+        width:18px;
+        height:18px;
+        left:12px;
+    }
+
+    .modal label{
+        font-size:12px;
     }
 }
 
