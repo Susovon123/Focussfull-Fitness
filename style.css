@@ -1313,6 +1313,7 @@ color: var(--main-color2);
 /* ======================== */
 /* about us page  */  
 /* ======================== */
+
 .about-banner{
        position: relative;
     z-index: 1;
@@ -1367,7 +1368,7 @@ left: 480px;
 .about-us-wrapper-box{
     max-width: 280px;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     margin: 6px;
  
     padding: 8px 12px;
@@ -1396,7 +1397,7 @@ transition: 0.9s ease-in all;
     font-family: var(--clashDisplay-r);
     font-weight: 500;
     color: var(--main-color3);
-    margin: 6px 0; 
+    margin: 6px ; 
     transition: all 0.9s ease-in; 
     cursor: pointer;
 } 
@@ -1442,108 +1443,92 @@ color: var(--main-color1);
     border: 1px solid var(--main-color6);
     overflow: hidden;
 }
-.workout-box, .workout-box1 ,.workout-box2 ,.workout-box3 ,.workout-box4 ,.workout-box5 ,.workout-box6{
-    width: 100%;
-    margin: 0 6px; 
-    height: 400px;
-    
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    box-shadow: 0 0 13px 4px #ffffff2b;
-}  
-
-
-
-.workout-box1::after{
-   background-image: url("images/about-us/sporty.png"); 
-position: absolute;
-top: -10px;
-background-repeat: no-repeat;
-background-size: contain;
-right: 0;
-width: 400px;
-height: 300px;
-background-position: center; 
-content: ""; 
-z-index: 2;
+.workout-content{
+    padding:22px;
+    width:100%;
+    min-height:600px;
+    border:1px solid var(--main-color6);
+    overflow:hidden;
 }
+
+.workout-box,
+.workout-box1,
+.workout-box2,
+.workout-box3,
+.workout-box4,
+.workout-box5,
+.workout-box6{
+    width:100%;
+    margin:0 6px;
+    height:400px;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    box-shadow:0 0 13px 4px #ffffff2b;
+}
+
+/* Common Image Style */
+.workout-box::after,
+.workout-box1::after,
+.workout-box2::after,
+.workout-box3::after,
+.workout-box4::after,
+.workout-box5::after,
+.workout-box6::after{
+    content:"";
+    position:absolute;
+    top:-10px;
+    right:0;
+    width:400px;
+    height:300px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    z-index:2;
+}
+
+/* Different Images */
 .workout-box::after{
-background-image: url("images/about-us/young-bodybuilder.png"); 
-position: absolute;
-top: -10px;
-background-repeat: no-repeat;
-background-size: contain;
-right: 0;
-width: 400px;
-height: 300px;
-background-position: center; 
-content: ""; 
-z-index: 2;
-
-}  
-.workout-box3::after{
-    background-image: url("images/about-us/39df0e086b.png"); 
-position: absolute;
-top: -10px;
-background-repeat: no-repeat;
-background-size: contain;
-right: 0;
-width: 400px;
-height: 300px;
-background-position: center; 
-content: ""; 
-z-index: 2;
-} 
-.workout-box4::after{
-        background-image: url("images/about-us/fit-individual.png"); 
-position: absolute;
-top: -10px;
-background-repeat: no-repeat;
-background-size: contain;
-right: 0;
-width: 400px;
-height: 300px;
-background-position: center; 
-content: ""; 
-z-index: 2;
+    background-image:url("images/about-us/young-bodybuilder.png");
 }
+
+.workout-box1::after,
+.workout-box2::after{
+    background-image:url("images/about-us/sporty.png");
+}
+
+.workout-box3::after{
+    background-image:url("images/about-us/39df0e086b.png");
+}
+
+.workout-box4::after{
+    background-image:url("images/about-us/fit-individual.png");
+}
+
 .workout-box5::after{
-        background-image: url("images/about-us/male-model.png"); 
-position: absolute;
-top: -10px;
-background-repeat: no-repeat;
-background-size: contain;
-right: 0;
-width: 400px;
-height: 300px;
-background-position: center; 
-content: ""; 
-z-index: 2;
+    background-image:url("images/about-us/male-model.png");
 }
 
 .workout-box6::after{
-        background-image: url("images/about-us/similing-strong.png"); 
-position: absolute;
-top: -10px;
-background-repeat: no-repeat;
-background-size: contain;
-right: 0;
-width: 400px;
-height: 300px;
-background-position: center; 
-content: ""; 
-z-index: 2;
+    background-image:url("images/about-us/similing-strong.png");
 }
-.workout-box::before ,.workout-box1::before ,.workout-box3::before,.workout-box4::before ,.workout-box5::before ,.workout-box6::before{
-background-image: linear-gradient(to top ,#000,#000000aa,transparent);
-position: absolute;
-top: 0;
-left: 0;
- content: ""; 
-z-index: 3;
-width: 100%; 
-height: 100%;
+
+/* Common Overlay */
+.workout-box::before,
+.workout-box1::before,
+.workout-box2::before,
+.workout-box3::before,
+.workout-box4::before,
+.workout-box5::before,
+.workout-box6::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(to top,#000,#000000aa,transparent);
+    z-index:3;
 }
 .workout-box-shape{
     position: absolute;
@@ -1792,7 +1777,7 @@ font-weight: 500;
 
 }
 .how-it-works-box1{
-    padding: 12px;
+    padding: 12px; 
     color: var(--main-color1);
     background-color: var(--main-color2);
     width: 50px;
@@ -2162,12 +2147,7 @@ z-index: 2;
     width: 18px;
     height: 18px;
     accent-color: var(--main-color2);
-    /* accent-color is a CSS property that changes the highlight color of form elements such as:
-
-✅ Checkbox
-✅ Radio button
-✅ Range slider
-✅ Progress bar */
+    /* accent-color is a CSS property that changes the highlight color of form elements such as:*/
 } 
 .modal label{
         background: linear-gradient(
@@ -2206,7 +2186,7 @@ z-index: 2;
     }
 }
 
-
+/* equalizer */
 @keyframes equalizer{
     0%,100%{
         transform: skew(-20deg) scaleY(.5);
@@ -2276,7 +2256,7 @@ h1,.h1-title{
     bottom: 264px;
 }
 input[type="search"]{
-    padding: 5px 7px;
+   display: none;
 }
 .nav-links a{
     font-size: 13px;
@@ -2292,12 +2272,6 @@ input[type="search"]{
         left:180px;
         bottom:300px;
         font-size:72px;
-    }
-
-    .about-us-banner-text{
-        left:460px;
-        bottom:260px;
-        font-size:15px;
     }
 
     .about-bar{
@@ -2325,6 +2299,7 @@ input[type="search"]{
 
     .workout-box,
     .workout-box1,
+    .workout-box2,
     .workout-box3,
     .workout-box4,
     .workout-box5,
@@ -2334,11 +2309,12 @@ input[type="search"]{
 
     .workout-box::after,
     .workout-box1::after,
+    .workout-box2::after,
     .workout-box3::after,
     .workout-box4::after,
     .workout-box5::after,
     .workout-box6::after{
-        width:330px;
+        width:360px;
         height:260px;
     }
 
@@ -2353,20 +2329,20 @@ input[type="search"]{
     }
 
     .workout-catagories select{
-        font-size:14px;
+        font-size:10px;
     }
 
 .common-question-text-head{
     font-size:28px;
 }
 
-.common-question-box{
-    padding:20px;
+.bmi-calculator label{
+    font-size: 12px;
+}
+.call-to-action-box1 label{
+    font-size: 12px;
 }
 
-.common-question-box select{
-    font-size:17px;
-}
 
 .workout-catagories select{
     font-size:14px;
@@ -2374,19 +2350,21 @@ input[type="search"]{
 .meet-your-coach .h2-title{
     font-size: 20px;
 }
-    .about-banner{
-        min-height:700px;
+    .about-banner {
+        min-height: 750px;
     }
-
-    .about-banner .h1-title{
-        left:180px;
-        bottom:260px;
+    .about-banner .h1-title {
+        left: 150px;
+        bottom: 280px;
     }
-
-  
-
-    .about-bar-rectangle{
-        margin-right:10px;
+    .about-us-banner-text {
+        left: 330px;
+        bottom: 246px;
+          font-size:15px;
+    }
+    .about-bar {
+        left: 350px;
+        bottom: 180px;
     }
 
     .call-to-action-box,
@@ -2459,6 +2437,29 @@ input[type="search"]{
 
     .input-box input{
         height:55px;
+    }
+        .accordion{
+        padding:12px;
+        font-size:13px;
+        border-radius:15px;
+    }
+
+    .accordion span:first-child{
+        width:85%;
+    }
+
+    .icon{
+        font-size:14px;
+    }
+
+    .panel{
+        border-radius:12px;
+    }
+
+    .panel p{
+        padding:12px;
+        font-size:12px;
+        line-height:1.5;
     }
     
 }
@@ -2835,21 +2836,26 @@ h1,.h1-title{
 .workout-box-head-text-sub{
     font-size:20px;
 }
-  .about-banner{
-        min-height:600px;
+ .about-banner {
+        min-height: 600px;
     }
-
-    .about-banner .h1-title{
-        left:100px;
-        bottom:220px;
+    /* Elements align in a vertical column to prevent horizontal clipping */
+    .about-banner .h1-title {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 220px;
+        font-size: 36px;
     }
-
-
-
-    .about-bar-rectangle{
-        width:18px;
-        min-height:42px;
-        margin-right:10px;
+    .about-us-banner-text {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 170px; 
+        font-size: 14px;
+    }
+    .about-bar {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 110px;
     }
        .call-to-action .row{
         flex-direction:column;
@@ -2947,6 +2953,28 @@ h1,.h1-title{
         margin-top:40px;
     }
 
+    .faq-column{
+        width:100%;
+        padding:0;
+    }
+
+    .faq-item{
+        margin-bottom:20px;
+    }
+
+    .accordion{
+        padding:20px 25px;
+        font-size:18px;
+    }
+
+    .icon{
+        font-size:18px;
+    }
+
+    .panel p{
+        padding:20px 25px;
+        font-size:15px;
+    }
     
 }
 
@@ -3165,16 +3193,7 @@ h3,.h3-title{
         font-size:46px;
     }
 
-    .about-us-banner-text{
-        left:100px;
-        bottom:615px;
-        font-size:13px;
-    }
-
-    .about-bar{
-        left:120px;
-        bottom:550px;
-    }
+  
 
     .about-workout-box1 .col25{
         max-width:50%;
@@ -3257,9 +3276,7 @@ h3,.h3-title{
 .workout-catagories{
     margin-bottom:15px;
 }
-  .about-banner{
-        min-height:500px;
-    }
+ 
 
     .about-banner .h1-title{
         left:60px;
@@ -3267,11 +3284,6 @@ h3,.h3-title{
     }
 
   
-    .about-bar-rectangle{
-        width:16px;
-        min-height:36px;
-        margin-right:8px;
-    }
 
     .call-to-action-box,
     .call-to-action-box1{
@@ -3379,6 +3391,45 @@ h3,.h3-title{
        .modal-section{
         padding:15px;
     }
+        .accordion{
+        padding:18px 22px;
+        font-size:17px;
+    }
+
+    .icon{
+        font-size:17px;
+    }
+
+    .panel p{
+        padding:18px 22px;
+        font-size:15px;
+        line-height:1.6;
+    } 
+     .about-banner {
+        min-height: 500px;
+    }
+    .about-banner .h1-title {
+          left: 50%;
+        transform: translateX(-50%);
+        bottom: 180px;
+        font-size: 30px;
+    }
+    .about-us-banner-text {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 130px;
+        font-size: 13px;
+    }
+    .about-bar {
+         left: 50%;
+        transform: translateX(-50%);
+        bottom: 80px;
+    }
+    .about-bar-rectangle {
+        width: 16px;
+        min-height: 38px;
+        margin-right: 9px;
+    }
 }
 /* ======================== 
      545px                    
@@ -3396,17 +3447,7 @@ h3,.h3-title{
         margin-left:10px;
     }
 
-    .about-us-banner-text{
-        position:static;
-        width:190px;
-        font-size:12px;
-        margin:15px 0 0 10px;
-    }
-
-    .about-bar{
-        position:static;
-        margin:20px 0 40px 10px;
-    }
+  
 
     .about-workout-box1{
         position:static;
@@ -3514,21 +3555,11 @@ h3,.h3-title{
     max-width: 160px;
 }
 
-    .about-banner{
-        min-height:420px;
-    }
-
-    .about-banner .h1-title{
-        left:30px;
-        bottom:150px;
-    }
+  
 
 
-    .about-bar-rectangle{
-        width:14px;
-        min-height:32px;
-        margin-right:7px;
-    }
+
+   
         .call-to-action-box,
     .call-to-action-box1{
         padding:25px;
@@ -3654,7 +3685,54 @@ h3,.h3-title{
     .modal-text{
         font-size:15px;
     }
+  .accordion{
+        padding:16px 18px;
+        font-size:15px;
+        border-radius:20px;
+    }
 
+    .accordion span:first-child{
+        width:90%;
+    }
+
+    .icon{
+        font-size:16px;
+    }
+
+    .panel{
+        border-radius:15px;
+    }
+
+    .panel p{
+        padding:16px 18px;
+        font-size:14px;
+    }
+    .about-banner {
+        min-height: 400px;
+    }
+    .about-banner .h1-title {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 140px;
+        font-size: 26px;
+    }
+    .about-us-banner-text {
+          left: 50%;
+        transform: translateX(-50%);
+        bottom: 95px;
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+    .about-bar {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 55px;
+    }
+    .about-bar-rectangle {
+        width: 14px;
+        min-height: 30px;
+        margin-right: 8px;
+    }
 }
 /*==========================
    480px
@@ -3791,31 +3869,30 @@ h3,.h3-title{
         font-size: 12px;
     }
 
-    .about-banner{
-        min-height:380px;
+    .about-banner {
+        min-height: 350px;
     }
-
-    .about-banner .h1-title{
-        left:20px;
-        bottom:135px;
+    .about-banner .h1-title {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 120px;
+        font-size: 22px;
     }
-
-    .about-us-banner-text{
-        left:60px;
-        bottom:105px;
-        font-size:11px;
-        padding:4px 6px;
+    .about-us-banner-text {
+         left: 50%;
+        transform: translateX(-50%);
+        bottom: 80px;
+        font-size: 11px;
     }
-
-    .about-bar{
-        left:75px;
-        bottom:60px;
+    .about-bar {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 45px;
     }
-
-    .about-bar-rectangle{
-        width:12px;
-        min-height:28px;
-        margin-right:6px;
+    .about-bar-rectangle {
+        width: 12px;
+        min-height: 24px;
+        margin-right: 6px;
     }
 
     .call-to-action-box,
@@ -3895,7 +3972,8 @@ h3,.h3-title{
 
     .bmi-calculator input{
         padding:10px;
-        font-size:14px;
+        font-size:14px; 
+      
     }
 
     .bmi-calculator-right-box{
@@ -3919,7 +3997,7 @@ h3,.h3-title{
         text-align:center;
     }
     .bmi-calculator .h2-title{
-    font-size: 8px;
+    font-size: 14px;
 }
 .fitness-journey-box-head{
         font-size: 14px;
@@ -3940,7 +4018,35 @@ h3,.h3-title{
     .modal label{
         font-size:14px;
     }
+ .choose-your-plan .h2-title{
+        font-size: 17px;
+    }
+      .how-it-works .h2-title{
+        font-size: 13px;
+    }
+  .modal .h2-title{
+        font-size: 13px;
+    } 
+     .accordion{
+        padding:15px;
+        font-size:14px;
+    }
 
+    .accordion span:first-child{
+        width:88%;
+    }
+
+    .icon{
+        font-size:15px;
+    }
+
+    .panel p{
+        padding:15px;
+        font-size:13px;
+    }
+     .commmon-questions .h2-title{
+        font-size: 8px;
+    }
 }
 
 
@@ -4000,8 +4106,13 @@ h3,.h3-title{
 
     .payment-content-box-text{
         font-size:30px;
+    } 
+    .common-questions .h2-title{
+        font-size: 10px;
     }
-
+    .company-slider .h2-title{
+        font-size: 10px;
+    }
     .footer-logo{
         font-size:34px;
     }
@@ -4017,27 +4128,30 @@ h3,.h3-title{
         min-height:320px;
     }
 
-    .about-banner .h1-title{
-        left:10px;
-        bottom:115px;
+     .about-banner {
+        min-height: 300px;
     }
-
-    .about-us-banner-text{
-        left:25px;
-        bottom:90px;
-        font-size:10px;
-        padding:3px 5px;
+    .about-banner .h1-title {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 105px;
+        font-size: 18px;
     }
-
-    .about-bar{
-        left:40px;
-        bottom:45px;
+    .about-us-banner-text {
+          left: 50%;
+        transform: translateX(-50%);
+        bottom: 70px;
+        font-size: 10px;
     }
-
-    .about-bar-rectangle{
-        width:10px;
-        min-height:24px;
-        margin-right:5px;
+    .about-bar {
+          left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+    }
+    .about-bar-rectangle {
+        width: 10px;
+        min-height: 18px;
+        margin-right: 5px;
     }
   .call-to-action-box,
     .call-to-action-box1{
@@ -4175,9 +4289,45 @@ h3,.h3-title{
         height:18px;
         left:12px;
     }
-
+    .modal .h2-title{
+        font-size: 13px;
+    }
     .modal label{
         font-size:12px;
     }
+    .choose-your-plan .h2-title{
+        font-size: 13px;
+    } 
+    .choose-your-plan .h2-title{
+        font-size: 9px;
+    }
+    .how-it-works .h2-title{
+        font-size: 13px;
+    } 
+
+    .accordion{
+        padding:12px;
+        font-size:13px;
+        border-radius:15px;
+    }
+
+    .accordion span:first-child{
+        width:85%;
+    }
+
+    .icon{
+        font-size:14px;
+    }
+
+    .panel{
+        border-radius:12px;
+    }
+
+    .panel p{
+        padding:12px;
+        font-size:12px;
+        line-height:1.5;
+    }
+
 }
 
