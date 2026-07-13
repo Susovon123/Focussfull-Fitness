@@ -89,24 +89,3 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-
-// counter
-const counters = document.querySelectorAll(".counter");
-
-counters.forEach(counter => {
-    const target = +counter.getAttribute("data-target");
-    let count = 0;
-    const speed = 50; // Smaller = faster
-
-    const updateCounter = () => {
-        if (count < target) {
-            count++;
-            counter.textContent = count;
-            setTimeout(updateCounter, speed);
-        } else {
-            counter.textContent = target;
-        }
-    };
-
-    updateCounter();
-});
